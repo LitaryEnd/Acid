@@ -1,0 +1,36 @@
+type: "PowerTurret"
+name: "Whirlwind"
+description: "Shoots a whirlwind of lightning."
+targetAir:  false
+targetGround: true
+shootEffect: "lightningShoot"
+health: 1000
+shootSound: "spark"
+size: 3
+
+reloadTime: 13
+shots: 4
+inaccuracy: 2.6
+
+consumes:{
+power:7
+}
+
+range: 170
+shootType:{
+type: LightningBulletType
+lightningColor: "#CCC9D2"
+lifetime: 15
+damage: 5
+}
+
+category: "turret"
+
+research: "arc"
+
+requirements: [
+metaglass/90
+silicon/90
+lead/90
+titanium/50
+]

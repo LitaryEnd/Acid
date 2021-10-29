@@ -1,0 +1,139 @@
+type: "ItemTurret" 
+name: "Spirit" 
+description: "Shoots over accelerated projectiles."
+
+details: "Forbidden technology." 
+
+shootSound: "shootBig"
+health: 3460
+size: 6
+reloadTime: 12
+
+shootShake: 1.5
+liquidCapacity: 38
+inaccuracy: 4.5
+alternate: true
+recoilAmount: 3.5
+
+rotateSpeed: 1.7
+spread: 18
+shots: 2
+shootCone:32
+restitution: 0.3
+coolantMultiplier: 0.5
+range: 450
+
+ammoTypes: {
+
+thorium:{
+speed: 6
+
+shootEffect: "shootPyraFlame"
+smokeEffect: "none"
+hitEffect: "flakExplosion" 
+despawnEffect: "explosion" 
+
+lifetime: 70
+damage: 52
+
+ammoMultiplier:4
+width:11
+height:14
+knockback: 1.2
+
+backColor: "#cc8fc0" 
+frontColor: "#faa2c7" 
+
+trailChance: 0.25
+trailColor: "#cb9fc2" 
+
+pierceBuilding: true
+pierce: true
+pierceCap: 8
+
+splashDamage: 22
+    splashDamageRadius: 44
+
+} 
+
+ blast-compound: {
+ speed: 7
+shootEffect: "shootBig" 
+ lifetime: 65
+ drag: 0.002
+ damage: 74
+ ammoMultiplier: 2
+ incendSpread: 4
+ incendAmount: 3
+despawnEffect: "blastExplosion"
+hitEffect: "blastExplosion" 
+ reloadMultiplier: 1
+ width: 10
+ height: 13
+ frontColor: "#FFB464"
+ knockback: 1.3668
+ backColor: "#FFDA73" 
+
+status: blasted
+statusDuration: 80
+splashDamage: 44
+    splashDamageRadius: 67
+fragBullets: 6
+fragBullet: {
+type: artilleryBulletType
+damage: 5
+splashDamage: 18
+    splashDamageRadius: 40
+drag: 0.1
+speed: 2
+status: blasted
+lifetime: 20
+width: 5
+height: 5
+backColor: "#DE4136" 
+frontColor: "#FFDA73"
+despawnEffect: "blastExplosion"
+hitEffect: "blastExplosion" 
+homingPower: 0.15
+homingRange: 60
+
+}
+ }
+ // 41:1
+
+//41:1 - при ошибке в предложении вывозит неизвестную ошибку. (1 случай) 
+// Решение: убрать {} на которую ругается Mindustry
+ 
+ surge-alloy: {
+shootEffect: "shootBig" 
+ speed: 6
+ lifetime: 75
+ damage: 120
+ ammoMultiplier: 2
+ homingPower: 0.33
+ knockback:1.9
+ homingRange: 30
+ reloadMultiplier: 2
+ width: 8
+ height: 16
+
+pierce: true
+pierceCap:  4
+ lightning:6
+lightningDamage:11
+ lightlingLenght:5
+
+ }
+ }
+
+category: "turret"
+ 
+research: "spectre" 
+
+requirements: [
+al/700 
+ toison/1120
+  graphite/770
+  surge-alloy/760
+ plastanium/470
+]

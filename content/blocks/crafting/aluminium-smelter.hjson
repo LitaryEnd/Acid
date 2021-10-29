@@ -1,0 +1,35 @@
+type: "GenericSmelter" 
+name: "Aluminium Smelter" 
+description: "Produces aluminium from scrap metal." 
+details: "Using aluminium acid."
+
+hasPower:true
+hasItems:true
+
+outputItem: al/1
+size:2
+craftTime:50
+liquidCapacity: 12
+updateEffect: "steam" 
+itemCapacity:16
+
+ambientSound: "machine" 
+ambientSoundVolume: 0.5
+
+consumes:{
+power:0.8
+liquid:
+water/0.09
+items:{items:[
+scrap/2
+]}}
+
+requirements:[
+titanium/40
+silicon/10
+lead/30
+graphite/20
+]
+
+category: "crafting" 
+research: "silicon-smelter" 

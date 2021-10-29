@@ -1,0 +1,69 @@
+type: "ItemTurret" 
+name: "One" 
+description: "Quickly fires single shells." 
+
+targetAir: true
+targetGround: true
+health: 90
+size: 1
+reloadTime: 25
+inaccuracy: 0.6
+range: 160
+
+ammoTypes: {
+
+ copper: {
+ speed: 4
+ lifetime: 45
+ damage: 5
+ ammoMultiplier: 3
+ width: 6
+ height: 9
+}
+
+ graphite: {
+ speed: 3
+ lifetime: 80
+ damage: 14
+ ammoMultiplier: 2
+ width: 7
+ height: 9
+
+ }
+ scrap: {
+ speed: 4
+ lifetime: 50
+ damage: 3
+ ammoMultiplier: 7
+ 
+status: "slow" 
+statusDuration: 45
+
+ width: 6
+ height: 9
+ frontColor: #FFB464
+ backColor: #FFDA73
+ }
+
+ silicon: {
+ speed: 4
+ lifetime: 50
+ damage: 14
+ ammoMultiplier: 1
+ homingPower: 0.3
+ homingRange: 40
+ reloadMultiplier: 2.7
+ width: 6
+ height: 9
+ }
+ }
+
+requirements: [
+ copper/20
+]
+
+category: "turret" 
+
+research: "duo"
+
+alwaysUnlocked: true

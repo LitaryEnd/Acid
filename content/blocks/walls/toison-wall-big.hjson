@@ -1,0 +1,26 @@
+type: "Wall" 
+name: "Large Toison Wall"
+description: "Protects structures. Requires more time to build. Reflects bullets, absorbs lasers. Does not give automatic connection of power nodes." 
+details: "A heavily slashed wall." 
+
+health: 4050
+size:2
+
+insulated: true
+absorbLasers: true
+flashHit: true
+
+schematicPriority: 99
+lightningChance: 0.8
+chanceDeflect: 8
+
+requirements:[
+toison/28
+
+]
+
+category: "defense"
+
+research: "toison-wall" 
+
+

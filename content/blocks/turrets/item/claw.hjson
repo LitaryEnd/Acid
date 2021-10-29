@@ -1,0 +1,117 @@
+type: "ItemTurret" 
+ name: "Claw"
+description: "Single-loading turret, can punch through the targets."
+details: "Prototype of an unknown turret. Some facts point to a spectre. " 
+
+health:1950
+size:4
+reloadTime:57
+cooldown:0.6
+range:280
+recoilAmount:3
+shootShake:2
+ammoUseEffect: "casing3" 
+inaccuracy:0.4
+
+velocityInaccuracy: 0.1
+
+spread:0
+rotateSpeed:2.4
+
+shootSound: "bang" 
+
+	ammoTypes:{
+
+blast-compound:{
+
+status:blasted
+	statusDuration:40
+
+reflectable:false 
+speed:6
+width:15
+height:20
+lifetime:50
+damage:64
+
+splashDamage:74
+splashDamageRadius:80
+
+knockback:1.8
+hitSize:9
+
+frontColor:"#E66F57" 
+backColor:"#C85C51" 
+
+shootEffect: "shootPyraFlame" 
+hitEffect: "blastExplosion" 
+despawnEffect: "explosion" 
+
+          incendAmount: 15
+			incendSpread: 9
+			incendChance: 3
+
+}
+
+thorium:{
+
+speed:6
+type:BasicBulletType
+damage:85
+lifetime:55
+width:15
+height:20
+reflectable:false
+
+shootEffect: "explosion"
+smokeEffect: "none"
+hitEffect: "flakExplosion"
+despawnEffect: "explosion"
+
+knockback:2.5
+ammoMultiplier: 2
+pierce:false
+
+}
+
+surge-alloy:{
+
+type:BasicBulletType
+speed:6
+lifetime:60
+damage:136
+width:15
+height:20
+reflectable:false
+
+shootEffect: "shootPyraFlame"
+smokeEffect: "none"
+hitEffect: "flakExplosion"
+
+knockback:4
+hitShake:3
+ammoMultiplier:1
+
+pierceBuilding:true
+pierceCap:2
+pierce:true
+
+lightning:10
+lightningDamage:26
+lightningLengthRand:3
+lightningLength:4
+
+splashDamage: 37
+    splashDamageRadius: 47
+}
+}
+
+category: "turret" 
+
+research: "blades"
+
+requirements:[
+thorium/475
+graphite/250
+phase-fabric/110
+] 

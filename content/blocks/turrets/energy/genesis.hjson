@@ -1,0 +1,105 @@
+type: "PowerTurret" 
+name: "Genesis" 
+description: "A large and very rapid-fire anti air turret."
+ 
+targetAir: true
+targetGround: false
+shootSound: "spark"
+health: 1150
+rotateSpeed: 3
+size: 5
+reloadTime: 40
+cooldown:0.7
+shots: 6
+shotDelay: 6
+shootCone: 15
+
+xRand: 6
+inaccuracy: 10
+
+hasPower: true
+
+powerUse: 16
+
+consumes:{
+power: 16
+}
+
+range: 260
+
+shootType:{
+
+type: basicBulletType
+damage: 35
+speed:7
+lifetime:46
+width: 12
+height: 8
+color: "#FF7D01"
+
+shootEffect: "explosion" 
+hitEffect: "none" 
+
+fragBullets: 1
+fragBullet: {
+
+type: basicBulletType
+damage: 20
+drag: 0.0005
+speed: 10
+status: slow
+lifetime: 35
+width: 7
+height: 16
+
+trailChance: 0.8
+trailColor: "#99ffff" 
+backColor: "#79F2EE"
+frontColor: "#ffffff"
+
+hitEffect: {
+type: WaveEffect
+lifetime: 30
+sizeTo: 30
+sizeFrom:0
+colorTo: "#ffffff" 
+colorFrom: "#00f2ee" 
+strokeTo: 0
+strokeFrom: 2
+} 
+
+despawnEffect: {
+type: WaveEffect
+lifetime: 50
+sizeTo: 30
+sizeFrom:0
+colorTo: "#ffffff" 
+colorFrom: "#00f2ee" 
+strokeTo: 0
+strokeFrom: 5
+} 
+
+pierce: false
+pierceBuilding: true
+
+homingPower: 0.15
+homingRange: 180
+
+}
+
+lightningDamage: 4
+lightningLengthRand:10
+lightning:4
+lightningLength:5
+} 
+
+category: "turret" 
+
+research: "whirlwind"
+
+requirements: [
+copper/40
+graphite/160
+thorium/240
+al/250
+]

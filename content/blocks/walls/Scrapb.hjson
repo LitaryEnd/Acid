@@ -1,0 +1,15 @@
+type: "Wall" 
+name: "Large Alluminium Wall" 
+description: "Protects structures." 
+
+
+health:2890
+size:2
+
+requirements:[
+al/28
+]
+
+category: "defense" 
+
+research: "Scraps" 

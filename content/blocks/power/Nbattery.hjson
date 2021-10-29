@@ -1,0 +1,25 @@
+type: "Battery" 
+name: "Unit" 
+description: "Stores energy and restore it."
+
+details: "Forbidden technology." 
+
+size: 5
+hasPower:true
+
+buildCostMultiplier:16.490
+
+consumes:{
+powerBuffered: 500000
+}
+
+requirements:[
+surge-alloy/30
+al/60
+silicon/20
+copper/100
+]
+
+category: "power" 
+
+research: "Tnode" 

@@ -1,0 +1,199 @@
+type: "ItemTurret" 
+name: "Traser" 
+description: "Shoots highly accurate, exposed projectiles."
+
+health: 2500
+size: 4
+reloadTime: 340
+cooldown: 250
+rotateSpeed: 2.6
+shootSound: "shotgun"
+shootShake: 2.5
+shots: 20
+
+spread: 6
+inaccuracy: 0.8
+shootEffect: "blastExplosion" 
+range: 440
+burstSpacing: 5
+ammoTypes: {
+
+ graphite : {
+
+ speed: 5
+ lifetime: 77
+ damage: 23
+ ammoMultiplier: 1
+ reloadMultiplier: 1.5
+
+backColor: "#457281"
+frontColor: "#ffffff"
+ 
+homingPower: 0.15
+homingRange:80
+
+ width: 13
+ height: 15
+
+
+knockback:1.2
+
+ }
+
+  toison:{
+
+ speed: 5
+ lifetime: 70
+ damage: 17
+ ammoMultiplier: 2
+
+backColor: "#DE4136" 
+frontColor: "#ffffff"
+ 
+ reloadMultiplier: 1
+ width: 16
+ height: 15
+
+ lightning: 1
+  lightningDamage: 3
+    lightningLength: 1
+
+homingPower:0.05
+homingRange:58
+
+knockback:1.4
+
+ }
+
+ pyratite: {
+
+ speed: 5
+ lifetime: 80
+ damage: 14
+ ammoMultiplier: 1
+
+ incendSpread: 2
+ incendAmount: 1
+
+ reloadMultiplier: 0.6
+ width: 17
+height: 12
+
+ frontColor: "#FFB464" 
+ backColor: "#FFDA73" 
+
+homingPower:0.1
+
+
+knockback:1.3
+
+fragBullets: 3
+fragBullet: {
+
+type: BasicBulletType
+
+splashDamage: 8
+    splashDamageRadius: 36
+
+speed: 4
+lifetime: 44
+width: 8
+height: 6
+pierce: false 
+
+homingPower: 0.5
+homingRange: 40
+
+despawnEffect: explosion
+hitEffect: explosion
+
+fragBullets: 8
+fragBullet: {
+
+type: BasicBulletType
+
+splashDamage: 3
+    splashDamageRadius: 20
+
+speed: 4
+lifetime: 15
+width: 3
+height: 2
+pierce: false 
+
+homingPower: 0.5
+homingRange: 40
+
+ }}}
+
+  surge-alloy: {
+
+ speed: 5
+ lifetime: 90
+ damage: 50
+ ammoMultiplier: 1
+
+ homingPower: 0.3
+ homingRange: 180
+
+ reloadMultiplier: 1
+knockback:1
+width: 17
+height: 16
+
+
+
+
+    lightning: 3
+    lightningDamage: 5
+    lightningLength: 5
+
+knockback:1.8
+
+ }
+
+plastanium: {
+
+ speed: 7
+ lifetime: 35
+ damage: 14
+ ammoMultiplier: 3
+
+ homingPower: 1
+ homingRange: 20
+
+ reloadMultiplier: 1.4
+ width:15
+height:16
+
+knockback:1.6
+
+fragBullets: 3
+fragBullet: {
+
+type: BasicBulletType
+damage: 4
+speed: 4
+lifetime: 24
+width: 10
+height: 10
+pierce: false 
+
+homingPower: 0.5
+homingRange: 40
+
+}
+ }
+ }
+
+category: "turret"
+
+research: "genesis" 
+
+requirements: [
+ 
+  graphite/130
+    titanium/140
+      plastanium/50
+       al/130
+]

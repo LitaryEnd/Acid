@@ -1,0 +1,105 @@
+type: flying
+flying: true
+name: "Dove" 
+description: "Punches enemies with explosive shells. " 
+
+health: 8780
+armor: 3
+accel: 0.10
+drag: 0.010
+speed: 1.8
+lowAltitude: true
+rotateShooting:true
+faceTarget:true 
+circleTarget: false //DONT USE THAT SCRAP, AAAAAA! 
+visualElevation: 0.35
+rotateSpeed: 1
+range: 320
+lightRadius: 160
+targetFlag: reactor
+hitSize: 60
+commandLimit:0
+engineSize:0
+    trailX: 37.0
+    trailY: -79.0
+    trailScl: 5.8
+    trailLength: 120.0
+	immunities: [
+		unmoving
+	]
+weapons:[
+{
+name: sniper-gun
+top:false
+reload:100
+mirror:true
+x:25
+y:9
+shootY:5
+recoil:0.6
+ammoEject: casing4
+shake:2
+rotate:false
+shots: 2
+shotDelay: 8
+shootSound:shootBig
+
+shootCone:45
+bullet:{
+type:basicBulletType
+speed:6
+damage:50
+lightning:3
+lightningDamage:16
+lightningLength:4
+lightningColor:560319
+
+splashDamage:22
+splashDamageRadius:35
+shootEffect:shootBig
+hitEffect:blastExplosion
+despawnEffect:blastExplosion
+
+width:12
+height:20
+lifetime: 50
+
+pierceBuilding: true
+pierceCap: 3
+
+trailChance: 0.3
+
+	}
+	}
+	{
+  name: null1
+  reload: 120
+  rotate: true
+  mirror: true
+  x: 10
+  shotDelay: 10
+  shots:6
+  shootCone: 16
+  rotateSpeed: 3
+  recoil: 0.2
+  shootY:6
+  shake: 0.3
+  y: 10
+  shootCone:30
+  shootSound: missile
+  bullet: {
+    type: missileBulletType
+    speed: 7
+    damage: 10
+    hitColor: 80CB71
+    shootEffect: shootBigSmoke2
+    despawnEffect: explosion
+    width: 10
+    height: 14
+    lifetime: 40
+    splashDamage: 20
+    splashDamageRadius: 57
+ 
+    }}
+]
+research: magpie

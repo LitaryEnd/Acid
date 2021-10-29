@@ -1,0 +1,150 @@
+type: "ItemTurret"
+name: "Rain"
+description: "Shotgun. Powerful spam."
+
+targetAir: true
+targetGround: true
+health: 1000
+rotateSpeed: 5
+size: 2
+reloadTime: 60
+inaccuracy: 3.4
+range: 145
+shots: 3
+shootSound: "shotgun"
+ammoUseEffect: "casing2" 
+cooldown: 0.05
+shootShake: 0.5
+liquidCapacity: 12
+recoilAmount: 3
+ammoEjectBack: 3
+
+ammoTypes: {
+
+ copper: {
+
+ speed: 4
+ lifetime: 50
+ damage: 5
+ ammoMultiplier: 5
+ reloadMultiplier: 2
+ width: 7
+ height: 8
+ type: BasicBulletType
+ }
+
+ thorium: {
+
+ speed: 4
+ lifetime: 30
+ damage: 13
+ ammoMultiplier: 1
+ reloadMultiplier: 1
+ width: 9
+ height: 10
+ type: BasicBulletType
+
+fragBullets: 6
+fragBullet: {
+type: BasicBulletType
+damage: 5
+speed: 4
+lifetime: 10
+width: 10
+height: 10
+homingPower: 0.05
+
+}
+ }
+
+graphite: {
+
+ speed: 4
+ lifetime: 40
+ damage: 20
+ ammoMultiplier: 2
+ reloadMultiplier: 1.5
+ width: 8
+ height: 9
+ type: BasicBulletType
+
+fragBullets: 6
+fragBullet: {
+type: BasicBulletType
+damage: 6
+speed: 3
+drag:"0.1"
+lifetime: 100
+width: 10
+height: 10
+backColor: "#617281"
+frontColor: "#ffffff"
+pierce: false
+homingPower: 0.10
+
+}
+ }
+
+ pyratite: {
+
+ speed: 3
+ lifetime: 50
+ damage: 8
+ ammoMultiplier: 5
+
+ incendSpread: 2
+ incendAmount: 1
+
+ reloadMultiplier: 2
+
+splashDamage: 5
+    splashDamageRadius: 32
+
+ width: 6
+ height: 7
+
+ frontColor: "#FFB464" 
+ backColor: "#FFDA73"
+
+ type: BasicBulletType
+
+ }
+
+ silicon: {
+
+ speed: 4
+ lifetime: 40
+ damage: 9
+ ammoMultiplier: 6
+
+ homingPower: 1
+ homingRange: 20
+
+ reloadMultiplier: 2
+ width: 7
+ height: 7
+ type: BasicBulletType
+
+fragBullets: 6
+fragBullet: {
+type: BasicBulletType
+damage: 4
+speed: 4
+lifetime: 5
+width: 10
+height: 10
+homingPower: 0.05
+
+}
+ }
+ }
+
+category: "turret" 
+
+research: "salvo"
+
+requirements: [
+ copper/75
+ titanium/60
+ graphite/80
+]

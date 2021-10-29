@@ -1,0 +1,6 @@
+name: "Toison"
+description: "Concrete made of thorium and titanium. Very fragile." 
+details: "During testing, he emitted thermal irradiation. Probably objects can react without a cooling system." 
+color: "#00dc70"
+radioactivity: 0.4
+flammability:0.1

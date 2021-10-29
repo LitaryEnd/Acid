@@ -1,0 +1,41 @@
+type: "Reconstructor"
+name: "Multiplicative Retrostructor"
+description: "Reconstructs units In the following versions."
+
+size: 5
+constructTime: 2100
+
+consumes: {
+  power: 3.3
+  items: {
+    items: [
+    graphite/20
+    silicon/40
+    titanium/80
+    metaglass/60
+    ]
+  }
+liquid:
+slag/0.2
+}
+
+requirements: [
+  graphite/160
+  silicon/70
+  titanium/170
+  lead/60
+]
+
+upgrades: [
+  [
+    disease,toxin
+  ]
+[ sparrow,woodpecker] 
+[
+wire, spark
+] 
+]
+
+category: "units"
+
+research: "multiplicative-reconstructor"

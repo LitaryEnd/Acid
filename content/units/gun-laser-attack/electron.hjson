@@ -1,0 +1,169 @@
+type: "mech"
+name: "Electron"
+description: "Devours the enemy up close, causing even more damage with shotguns. " 
+
+health: 19500
+armor: 15
+speed: 0.3
+flying: false
+targetAir: true
+range: 270
+buildSpeed: 1.7
+hitSize: 30
+drag: 0.03
+itemCapacity: 200
+rotateSpeed: 1.6
+ mechFrontSway: 1
+canDrown: false
+
+mechStepParticles: true
+mechStepShake: 0.40
+
+singleTarget: true
+
+immunities: [
+		"shocked"
+   "unmoving" 
+	] 
+weapons:[
+   {
+ name:  electron-cannon
+    reload: 40
+    mirror: true
+top: false
+    x: 23
+    y: 2
+    shootY: 9
+shots: 2
+shotDelay: 12
+    recoil: 3 
+    shootShake: 4
+    rotate: false
+    shootSound: bang
+    
+    
+			bullet: {
+              type: BasicBulletType
+             height: 25
+              width: 14
+              damage: 25
+ speed: 6
+splashDamage: 44
+    splashDamageRadius: 70
+
+              status: shocked
+              statusDuration: 160
+              hitColor: "#79F2EE"
+              shootEffect: lightningShoot
+              hitEffect: explosion
+     despawnEffect: explosion
+  lifetime: 40
+
+inaccuracy: 3
+
+trailChance: 0.1
+trailColor: "#7a7a7a" 
+
+backColor: "#ffffff" 
+frontColor: "#79f2ee" 
+              
+ 
+	       }
+	    }
+    {
+ name:  laser-shotgun
+    reload: 90
+
+    mirror: "true"
+
+    x: 32
+    y: -6
+
+    shootY: 12
+
+    heatColor: "78ff0ee" 
+
+    recoil: 1.5
+
+    shake: 1
+
+    shootShake: 3
+    
+    shootSound: "shotgun"
+    
+    shootCone: 45
+
+    spacing: 12
+
+    rotate: "false"
+
+    shots: 2
+
+			bullet: {
+              type: ShrapnelBulletType
+
+              length: 70
+
+              width: 16
+
+              damage: 100
+
+              speed: 0.01
+
+              lifetime: 30
+
+              status: "blasted"
+              statusDuration: 220
+
+              hitColor: "#79F2EE"
+
+              shootEffect: lightningShoot
+
+              hitEffect: lightningShoot
+              
+              colors: [
+
+      "#79f2ee" 
+
+      "#47ecff" 
+
+      "#ffffff" 
+
+                      ] 
+              
+	       }
+	    }
+ {
+ name:  null
+
+    reload: 16
+
+    mirror: true
+
+    x: 2
+    y: 4
+
+    shootY: 9
+
+    recoil: 1.5
+    shake: 1
+
+    rotate: false
+
+    shootSound: sap
+  
+    shootCone: 45
+
+			bullet: {
+              type: SapBulletType
+              width: 1
+lenght: 80
+sapStrength: 0.7
+              damage: 40
+              
+              knockback: -1.3
+              
+	       }
+	    }
+] 
+research: eel

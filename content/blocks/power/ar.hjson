@@ -1,0 +1,49 @@
+type: "impactReactor"
+name: "Eater" 
+description: "Burns resources turning them into steam, which accelerates to high speeds. There is an EMR effect due to the use of nuclear components."
+
+//details: "Uses Air-Water Cooling Technology." 
+
+liquidCapacity: 60
+itemCapacity: 50
+
+//update: false 
+
+size: 5
+
+hasLiquids: true
+
+powerProduction: 210.5
+explosionDamage: 50
+explosionRadius: 1000
+
+plasma1: "#BF3FB3"
+plasma2: "#BF3FB3" 
+
+itemDuration:600
+
+consumes: {
+power: 60
+liquid:
+water/0.7
+items:{items:[
+toison/3
+coal/8
+spore-pod/6
+]}} 
+
+requirements: [
+surge-alloy/460
+al/400
+plastanium/450
+graphite/350
+metaglass/200
+titanium/180
+]
+
+ambientSound: "hum"
+ambientSoundVolume: 2
+
+category: "power"
+
+research: "thorium-reactor"
