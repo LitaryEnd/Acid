@@ -21,7 +21,8 @@ cooldown: 0.9
 inaccuracy: 10
 
 rotateSpeed: 1.5
-
+
+
 restitution: 0.4
 
 recoilAmount: 12
@@ -112,7 +113,16 @@ lifetime: 10
 
 }
 
-despawnEffect: "
+despawnEffect: {
+
+type: WaveEffect
+sizeTo:0
+sizeFrom: 200
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 100
+
+}
 
 status: "shocked"
 statusDuration: 290
