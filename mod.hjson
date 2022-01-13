@@ -5,9 +5,5 @@ description: "Powered by hjson. Access is completely open to everyone, use the m
 Работает на hjson. Доступ полностью открыт для всех, используйте данные мода так, как хотите." 
 author: "Toxin|Sunset universe" 
 version: "A135|12.01|only 7.0" 
-dependencies:[ 
-
-// Sunset. Maybe. 
-
-]
+dependencies:[ ]
 minGameVersion: 129
