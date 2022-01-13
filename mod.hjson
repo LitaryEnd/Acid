@@ -1,0 +1,31 @@
+displayName:"Acid" 
+name: acid
+description: "Powered by hjson. Access is completely open to everyone, use the modification data as you want. 
+
+Работает на hjson. Доступ полностью открыт для всех, используйте данные мода так, как хотите." 
+author: "Toxin|Sunset universe" 
+version: "A135|12.01|only 7.0" 
+dependencies:[ 
+
+// Sunset. Maybe. 
+
+]
+minGameVersion: 129
+
+//*
+
+mod.info|update 13.01
+files = 299
+folders = 87
+sprites = 215
+code = 76
+Pre-last.update|
+descriptor - turret
+electricity - unit
+bundles.russia
+bundles.ukraina
+rename code/sprite
+|
+last.update|
+bundles.deutch
+|

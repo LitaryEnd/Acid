@@ -1,0 +1,133 @@
+//Code "Meteor"
+
+type: "PowerTurret" 
+name: "Descriptor"
+description: "Energy shock artillery."
+
+targetAir: "false"
+targetGround: "true"
+
+health: 4000
+size: 7
+reloadTime: 420
+
+powerUse: 40
+
+consumes:{
+power: 10
+}
+
+cooldown: 0.9
+inaccuracy: 10
+
+rotateSpeed: 1.5
+
+restitution: 0.4
+
+recoilAmount: 12
+velocityInaccuracy: 0.2
+
+shootShake: 5
+range: 800
+
+ chargeSound: "descriptor-shock-fire" 
+ 
+	chargeTime: 65
+	chargeMaxDelay: 10
+	chargeEffects: 1
+	
+chargeBeginEffect: {
+	
+    type: ParticleEffect 
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 20
+    length: 0.2
+    lifetime: 65
+    colorFrom: "#FF5845"
+    colorTo: "#FFC1BB"
+    
+} 
+
+	chargeEffect: {
+	
+    type: WaveEffect
+    lifetime: 65
+    sizeFrom: 45
+    sizeTo: 0
+    strokeFrom: 0
+    strokeTo: 5
+    colorFrom: "#FF5845"
+    colorTo: "#FFC1BB"
+	
+	}
+
+shootType:{
+
+type: ArtilleryBulletType
+
+splashDamage: 1100
+splashDamageRadius: 300
+
+speed: 10
+lifetime: 140
+width: 30
+height: 40
+
+frontColor: "#08e8de"
+backColor: "#08e8de"
+
+shootEffect: {
+
+type: MultiEffect
+
+effects:[
+{
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 40
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 30
+}
+{
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 100
+colorTo: "#08e8de"
+colorFrom: "#00ffff"
+lifetime: 100
+}
+]
+}
+
+hitEffect: {
+
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 400
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 10
+
+}
+
+despawnEffect: "
+
+status: "shocked"
+statusDuration: 290
+
+} 
+
+category: "turret"
+
+research: "arrow"
+
+requirements: [
+ toison/880
+ surge-alloy/540
+ aluminium/110
+ plastanium/190
+  copper/340
+      silicon/910
+]

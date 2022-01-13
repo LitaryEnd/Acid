@@ -1,0 +1,164 @@
+type: "legs"
+                 research: infection
+name: "Pathology" 
+description: "Fires three alternating shells. Restores the territory. Can overlay a shield on allied combat units. Has a power shield. " 
+
+drag: 0.1
+speed: 0.5
+hitSize: 21
+health: 21500
+range: 200
+groundLayer:75
+armor: 12
+rotateSpeed: 1.9
+legCount: 6
+legPairOffset: 3.1
+legMoveSpace: 0.8
+legLength: 75
+landShake: 1
+legSpeed: 0.1
+rippleScale: 3
+buildSpeed: 1.1
+legExtension: -20
+legSplashDamage: 10
+immunities: [
+		"burning" 
+		"unmoving"
+		"disarmed"
+       "blasted" 
+	]
+itemCapacity: 160
+legSplashRange: 60
+hovering: true
+allowLegStep: true
+visualElevation: 0.95
+weapons: [
+{
+  name: sin
+  reload: 32
+  rotate: false
+  mirror: true
+  x: 22
+  y: 4
+  shootSound: shootBig
+  shots: 3
+  shotDelay: 6
+  bullet: {
+    type: BasicBulletType
+    speed: 6
+    damage: 55
+    hitColor: 80CB71
+    shootEffect: sparkShoot
+    despawnEffect: smoke
+    width: 13
+    height: 13
+    lifetime: 35
+    splashDamage: 38
+    splashDamageRadius: 55
+    backColor: 80CB71
+    frontColor: 80CB71
+    lightningColor: 80CB71
+    lightning: 2
+    lightningLength: 3
+   lightningDamage: 18
+}} 
+/*
+{
+  name: null1
+  reload: 240
+  rotate: false
+  mirror: false
+  x: 0
+  y: 0
+  shootSound: artillery
+  bullet: {
+   type: ArtilleryBulletType 
+    speed: 5
+    damage: 40
+    hitColor: 80CB71
+    shootEffect: shootBigSmoke
+    despawnEffect: blastExplosion 
+status: shocked 
+statusDuration: 120
+    width: 20
+    height: 30
+    lifetime: 70
+hitColor:DE4136FF
+    splashDamage: 110
+    splashDamageRadius: 65
+    backColor: 80CB71
+    frontColor: 80CB71
+    lightningColor: FF7D01
+    lightning: 4
+lightningDamage: 15
+    lightningLength: 10
+fragBullets: 4
+fragBullet: {
+type: BasicBulletType 
+damage: 5
+speed: 5
+drag: 0.1
+lifetime: 240
+status: slow
+splashDamage: 45
+splashDamageRadius: 85
+statusDuration: 60
+trailChance:0.4
+
+width: 5
+hitColor: "#FFFFFF" 
+height: 5
+
+
+pierce: true
+homingPower: 0.10
+
+   
+}}}
+*/
+] 
+abilities: [
+
+{
+type: "mindustry.entities.abilities.RepairFieldAbility"
+range: 230
+amount: 1120
+reload: 580
+}  
+{
+    type: "mindustry.entities.abilities.ShieldRegenFieldAbility"
+    range: 200
+    amount: 640
+    max: 3500
+    reload: 480
+    activeEffect: {
+      type: WaveEffect
+      lifetime: 35
+
+      sizeTo: 300
+      strokeFrom: 5
+      strokeTo: 2
+
+      colorFrom: "#80cb71"
+      colorTo: "#90bb99"
+    }
+    applyEffect: {
+      type: WaveEffect
+      lifetime: 35
+
+      sizeTo: 40
+      strokeFrom: 2
+      strokeTo: 0
+
+      colorFrom: "#90bb99"
+      colorTo: "#80cb71"
+    }
+  }
+{
+type: "mindustry.entities.abilities.ForceFieldAbility" 
+range: 550
+max: 550
+regen: 60
+cooldown: 50
+} 
+]

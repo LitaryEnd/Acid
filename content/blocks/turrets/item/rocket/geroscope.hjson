@@ -1,0 +1,123 @@
+type: "ItemTurret"
+name: "Geroscope"
+description: "Covers EMP missile all nearby targets."
+
+targetAir: true
+targetGround: true
+health: 480
+rotateSpeed: 3
+size: 2
+reloadTime: 80
+inaccuracy: 6
+range: 210
+
+shootSound: "missileLaunch-sound"
+
+/*
+frameCount: 3
+frameSpeed: 5
+drawer: DrawAnimation
+*/
+
+cooldown: 0.5
+shootShake: 7
+liquidCapacity: 18
+recoilAmount: 4
+ammoEjectBack: 7
+
+ammoTypes: {
+
+blast-compound: {
+type: missileBulletType
+ speed: 6
+ lifetime: 40
+ damage: 40
+splashDamage: 230
+splashDamageRadius: 110
+
+ ammoMultiplier: 5
+ reloadMultiplier: 1
+ width: 10
+ height: 14
+status: "blasted"
+statusDuration: 80
+weaveScale: 8
+        weaveMag: 2
+
+hitEffect: blastExplosion
+despawnEffect: blastExplosion
+shootEffect: "shootPyraFlame" 
+smokeEffect: none
+ }
+
+ toison: {
+incendChance: 2
+  incendSpread: 4
+  incendAmount: 2
+ speed: 6
+ lifetime: 40
+ damage: 64
+ ammoMultiplier: 2
+ reloadMultiplier: 1
+ width: 10
+ height: 14
+ type: missileBulletType
+hitEffect: blastExplosion
+despawnEffect: blastExplosion
+shootEffect: "shootPyraFlame" 
+smokeEffect: none
+weaveScale: 8
+        weaveMag: 2
+splashDamage: 190
+splashDamageRadius: 90
+lightningDamage: 23
+lightningColor: "#77f9cc" 
+lightningLength:5
+lightning: 4
+frontColor: "#20bc99" 
+status: "block" 
+statusDuration: 110
+ }
+
+ pyratite: {
+
+ speed: 5
+ lifetime: 38
+ damage: 42
+ ammoMultiplier: 5
+weaveScale: 8
+        weaveMag: 2
+
+ incendSpread: 4
+ incendAmount: 8
+
+ reloadMultiplier: 2
+status: "melting" 
+statusDuration: 60
+splashDamage: 80
+    splashDamageRadius: 85
+
+ width: 10
+ height: 14
+
+ frontColor: "#FFB464" 
+ backColor: "#FFDA73"
+shootEffect: "shootPyraFlame" 
+despawnEffect: blastExplosion
+hitEffect: blastExplosion
+ type: MissileBulletType
+
+ }
+
+ 
+ }
+
+category: "turret" 
+
+research: "lancer"
+
+requirements: [
+ silicon/40
+ graphite/80
+lead/50
+]

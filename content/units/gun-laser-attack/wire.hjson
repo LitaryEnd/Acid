@@ -1,0 +1,47 @@
+type: "mech"
+name: "Wire"
+description: "Shoots breakthrough lasers."
+
+health: 580
+hitSize: 4
+armor: 5
+speed: 0.67
+flying:false
+range:130
+buildSpeed: 0
+drag:0.02
+targetFlag: turret
+itemCapacity: 25
+rotateSpeed: 3.3
+immunities: [
+  "block" 
+] 
+
+weapons:[
+{
+  name: null
+  reload: 6
+recoil: 0.5
+  rotate: false
+  mirror: true
+  x: 0
+  y: 2
+  shootSound: plasmaShoot
+  bullet: {
+    type: LaserBoltBulletType
+    damage: 8
+speed: 4
+    hitEffect: hitEmpSpark
+    shootEffect: smoke
+    despawnEffect: hitEmpSpark
+    width: 2
+
+    height: 7
+    lifetime: 38
+
+pierceBuilding:true
+pierceCap: 2
+  }}]
+research: {
+parent: nova
+} 

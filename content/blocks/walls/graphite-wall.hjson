@@ -1,0 +1,16 @@
+type: "Wall"
+name: "Graphite Wall"
+description: "Protects structures. Absorbs shells." 
+
+health: 580
+size:1
+insulated: true
+chanceDeflect: 0
+
+requirements:[
+ graphite/6
+]
+
+category: "defense"
+
+research: "copper-wall-large"

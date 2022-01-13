@@ -1,0 +1,107 @@
+type: "ItemTurret" 
+name: "Blades" 
+description: "Shoots with exposed  bullets." 
+
+targetAir: true
+targetGround: true
+health: 1260
+size: 3
+reloadTime: 10
+cooldown: 7
+rotateSpeed: 3.5
+inaccuracy:10
+shootShake:0.5
+shootSound: "shootBig" 
+range: 210
+liquidCapacity: 8
+
+ammoTypes: {
+
+ lead: {
+
+ speed: 6
+ lifetime: 30
+
+ damage: 8
+ ammoMultiplier: 1
+knockback:0.4
+ reloadMultiplier: 4
+
+ width: 7
+ height: 10
+
+ }
+
+ graphite: {
+
+ speed: 4
+ lifetime: 64
+ damage: 22
+ ammoMultiplier: 4
+ reloadMultiplier: 0.7
+knockback:1
+
+ width: 8
+ height: 11
+
+ }
+
+ pyratite: {
+
+ speed: 5
+ lifetime: 45
+ damage: 19
+ ammoMultiplier: 2
+
+ incendSpread: 2
+ incendAmount: 2
+ incendChance: 2
+
+ reloadMultiplier: 0.5
+knockback: 0.8760
+ width: 6
+ height: 10
+ frontColor: "#FFB464" 
+ backColor: "#FFDA73" 
+
+status: melting
+statusDuration: 60
+
+ }
+
+ aluminium: {
+
+ speed: 4
+ lifetime: 67
+ damage: 8
+
+splashDamage: 11
+splashDamageRadius: 31
+
+ ammoMultiplier: 3
+
+ homingPower: 0.1
+ homingRange: 40
+
+knockback:0.940
+ reloadMultiplier: 2
+
+ width: 14
+ height: 12
+
+despawnEffect: flakExplosion
+
+status: blasted
+statusDuration: 30
+ }
+ }
+
+category: "turret" 
+
+research: "salvo"
+ 
+requirements: [
+ copper/85
+  titanium/120
+ graphite/140
+]

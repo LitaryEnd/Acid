@@ -1,0 +1,30 @@
+type: "GenericSmelter"
+name: "Toison Purifier"
+description: "Creates thoison from titanium and thorium by purification."  
+
+hasPower:true
+hasItems:true
+
+outputItem: toison/2
+size:4
+craftTime:260
+updateEffect: "steam" 
+itemCapacity:48
+
+consumes:{
+power: 8
+items:{items:[
+titanium/2
+thorium/3
+]}}
+
+requirements:[
+titanium/90
+aluminium/30
+silicon/40
+thorium/50
+]
+
+category: "crafting" 
+
+research: "multi-press" 

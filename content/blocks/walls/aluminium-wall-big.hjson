@@ -1,0 +1,14 @@
+type: "Wall" 
+name: "Alluminium Wall" 
+description: "Protects structures."  
+
+health:540
+size:1
+
+requirements:[
+aluminium/12
+]
+
+category: "defense" 
+
+research: "copper-wall-large" 

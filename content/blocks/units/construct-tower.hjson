@@ -1,0 +1,44 @@
+type: "Reconstructor" 
+name: "Construct tower" 
+description: "Completely rebuilds the unit in its final 6 form." 
+
+details: "Forbidden technology, not previously mentioned anywhere." 
+
+size: 11
+constructTime: 23800
+
+consumes: {
+  power: 17.5
+  items: {
+    items: [
+    surge-alloy/2480
+    graphite/1300
+    toison/450
+    phase-fabric/880
+    copper/990
+    silicon/1500
+    ]
+  }
+liquid:
+slag/0.2
+} 
+
+requirements: [
+  surge-alloy/2460
+  toison/1960
+  aluminium/1500
+  silicon/1790
+  plastanium/2190
+  phase-fabric/1790
+]
+
+upgrades: [
+  [
+    pathology, coma
+  ]
+[dove, hawk] 
+]
+
+category: "units"
+
+research: "tetrative-reconstructor"

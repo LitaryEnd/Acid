@@ -1,0 +1,235 @@
+type: "mech"
+name: "Electricity"
+description: "Shoots a large number of plasma projectiles, if the enemy is close, the bot devours the enemy with lasers and attacks with a shotgun." 
+
+health: 21000
+armor: 20
+speed: 0.37
+flying: false
+targetAir: true
+range: 330
+buildSpeed: 3
+hitSize: 38
+drag: 0.04
+itemCapacity: 500
+rotateSpeed: 2
+ mechFrontSway: 1
+canDrown: false
+
+mechStepParticles: true
+mechStepShake: 0.40
+
+singleTarget: true
+
+immunities: [
+		"shocked"
+  "block" 
+   "electrified" 
+   // "system-stop" 
+	] 
+weapons:[
+   {
+ name:  electricity-weapon
+    reload: 8
+    mirror: true
+top: false
+    x: 31
+    y: 2
+    shootY: 9
+
+    recoil: 3 
+    shootShake: 4
+    rotate: false
+    shootSound: bang
+    cone: 85
+    
+    
+			bullet: {
+              type: BasicBulletType
+             height: 30
+              width: 13
+              damage: 55
+ speed: 10
+
+              status: shocked
+              statusDuration: 160
+              hitColor: "#79F2EE"
+              shootEffect: lightningShoot
+              hitEffect: explosion
+     despawnEffect: explosion
+  lifetime: 28
+
+inaccuracy: 5
+
+trailChance: 0.1
+trailColor: "#7a7a7a" 
+
+backColor: "#ffffff" 
+frontColor: "#79f2ee" 
+              
+ 
+	       }
+	    }
+    {
+ name: laser-shotgun-electicity
+    reload: 50
+	
+	//top: "false"
+
+    mirror: "true"
+
+    x: 0
+    y: 4
+
+    
+
+    heatColor: "78ff0ee" 
+
+    recoil: 1.5
+
+    shake: 1
+
+    shootShake: 3
+    
+    shootSound: "shotgun"
+    
+    shootCone: 45
+
+    spacing: 0
+
+    rotate: "false"
+
+    shots: 1
+
+			bullet: {
+              type: ShrapnelBulletType
+
+              length: 140
+
+              width: 15
+
+              damage: 280
+
+              speed: 0.01
+
+              lifetime: 30
+
+              status: "blasted"
+              statusDuration: 300
+
+              hitColor: "#79F2EE"
+
+              shootEffect: lightningShoot
+
+              hitEffect: lightningShoot
+              
+              colors: [
+
+      "#79f2ee" 
+
+      "#47ecff" 
+
+      "#ffffff" 
+
+                      ] 
+              
+	       }
+	    }
+ {
+ name:  null
+
+    reload: 16
+
+    mirror: true
+
+    x: 5
+    y: 5
+
+    shootY: 9
+
+    recoil: 1.5
+    shake: 1
+
+    rotate: false
+
+    shootSound: sap
+  
+    shootCone: 45
+
+			bullet: {
+              type: SapBulletType
+              width: 1
+lenght: 80
+sapStrength: 0.7
+              damage: 40
+              
+              knockback: -1.3
+              
+	       }
+	    }
+		{
+ name:  null
+
+    reload: 24
+
+    mirror: true
+
+    x: 12
+    y: 5
+
+    shootY: 9
+
+    recoil: 1.5
+    shake: 1
+
+    rotate: false
+
+    shootSound: sap
+  
+    shootCone: 45
+
+			bullet: {
+              type: SapBulletType
+              width: 1
+lenght: 80
+sapStrength: 0.7
+              damage: 80
+              
+              knockback: -1.3
+              
+	       }
+	    }
+				{
+ name:  null
+
+    reload: 6
+
+    mirror: true
+
+    x: 2
+    y: 5
+
+    shootY: 9
+
+    recoil: 1.5
+    shake: 1
+
+    rotate: false
+
+    shootSound: sap
+  
+    shootCone: 45
+
+			bullet: {
+              type: SapBulletType
+              width: 1
+lenght: 80
+sapStrength: 0.7
+              damage: 20
+              
+              knockback: -1.3
+              
+	       }
+	    }
+] 
+research: electron

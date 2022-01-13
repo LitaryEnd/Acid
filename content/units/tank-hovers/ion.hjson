@@ -1,0 +1,106 @@
+type: "legs"
+name: "Ion"
+description: "Shoots a small beam of energy." 
+
+health: 220
+armor: 2
+speed: 1.4
+flying: false
+targetAir: true
+range: 90
+targetFlag: battery 
+
+groundLayer: 75
+
+commandLimit: 4
+
+hitSize: 8
+drag: 0.13
+itemCapacity: 15
+rotateSpeed: 4
+ 
+canDrown: false
+
+mechStepParticles: false
+
+hovering: true
+
+legCount: 0
+legSpeed: 0.0
+
+rotateShooting: true
+maxRange:90
+singleTarget: true
+
+visualElevation: 0.13
+
+lowAltitude: true
+
+weapons:[
+   {
+ name:  ion-laser
+    reload: 240
+    mirror: false
+top: true
+    x: 0
+    y: 0
+    shootY: 4
+    recoil: 1
+    shake: 3
+    rotate: true
+    rotateSpeed: 3.7
+    shootSound: spark
+    
+    continuous: true
+
+targetInterval: 20
+targetSwitchInterval: 30
+
+			bullet: {
+
+type: ContinuousLaserBulletType
+
+width: 3
+
+lifetime: 170
+
+damage: 29
+              
+              lenght: 30
+/*
+status: ionization
+statusDuration: 20
+*/
+
+collidesTeam: true
+
+status: burning
+statusDuration: 80
+
+incendChance: 1
+incendAmount: 2
+incendSpread: 1
+
+shootEffect: shootHeal
+hitEffect: hitMeltHeal
+smokeEffect: none
+
+largeHit: false
+
+drawSize: 64
+
+colors: [
+
+"#73ef76" 
+
+"#92d989" 
+
+"#Ffffff" 
+
+] 
+
+ }
+}
+
+] 
+research: wire
