@@ -21,7 +21,7 @@ ammoEjectBack: 3
 
 ammoTypes: {
 
- al: {
+ aluminium: {
 
  speed: 4
  lifetime: 55
