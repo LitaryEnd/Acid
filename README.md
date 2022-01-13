@@ -1,6 +1,6 @@
 # Acid
 
-## All information about the changes is in "mod.hjson". 
+## All information about the changes is in "info.md". 
 
 > These are changes in code, sprites, sounds, sectors.
 
