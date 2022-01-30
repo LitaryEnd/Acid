@@ -1,8 +1,0 @@
-sector: 228
-name: "Height"
-description: "This height is occupied by the enemy. Blow up everything you can, mine the territory, bomb the base. This peak must be destroyed."
-
-difficulty: 8
-captureWave: 0
-
-research: nuclearComplex
