@@ -1,9 +1,0 @@
-displayName:"Acid" 
-name: acid
-description: "Powered by hjson. Access is completely open to everyone, use the modification data as you want. 
-
-Работает на hjson. Доступ полностью открыт для всех, используйте данные мода так, как хотите." 
-author: "Toxin|Sunset universe" 
-version: "A135|12.01|only 7.0" 
-dependencies:[ ]
-minGameVersion: 129
