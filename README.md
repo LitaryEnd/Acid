@@ -6,8 +6,7 @@
 
 > Beware, some content is still in development or may not be executed at all at the time of Alpha V7.135. You will be able to see it in the future 
 
-## All information about the changes is in "mod.hjson". 
-> These are changes in code, sprites, sounds, sectors.
+( All information about the changes is in "info.md". )
 
 ## How long does it take to create a mod? 
 
