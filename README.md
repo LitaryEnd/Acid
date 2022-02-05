@@ -5,9 +5,6 @@
 
 > Beware, some content is still in development or may not be executed at all at the time of Alpha V7.135. You will be able to see it in the future 
 
-## All information about the changes is in "mod.hjson". 
-> These are changes in code, sprites, sounds, sectors.
-
 ## How long does it take to create a mod? 
 > 27.12.2020. From the first day of my appearance in the Mindustry. 
 
