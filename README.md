@@ -1,3 +1,5 @@
+note: I used a script from "Eschatologie/Heavy-Armaments-Industries" for helicopters. Alas, but writing in "js" is not my thing :)
+
 # Acid
 > Gameplay modification, created for the variety of the game, despite the specificity. 
 
@@ -12,8 +14,6 @@
 > redraw 1/3 mod
 
 > new units
-
-> scripts
 
 > new blocks (not turret) 
 
