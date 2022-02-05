@@ -1,0 +1,124 @@
+type: flying
+flying: true
+name: "Dove" 
+description: "Punches enemies with explosive shells. " 
+
+health: 8780
+armor: 4
+accel: 0.10
+drag: 0.010
+speed: 1.8
+lowAltitude: true
+rotateShooting:true
+faceTarget:true 
+
+visualElevation: 0.35
+rotateSpeed: 2
+range: 320
+lightRadius: 160
+targetFlags: [factory,reactor]
+hitSize: 60
+commandLimit: 3
+engineSize: 5
+    trailX: 37.0
+    trailY: -79.0
+    trailScl: 5.8
+    trailLength: 120.0
+	immunities: [
+		block
+	]
+weapons:[
+{
+name: dio
+top:true
+reload:50
+mirror:false
+x:0
+y:14
+shootY:0
+recoil:1
+
+shake:2
+rotate: true
+
+shootShake: 6
+
+inaccuracy: 4.5
+
+recoilAmount: 3.5
+
+rotateSpeed: 2.4
+
+shots: 4
+
+restitution: 0.3
+
+shootSound:shootBig
+
+
+shootCone: 90
+bullet:{
+type:basicBulletType
+speed: 6
+damage:50
+lightning:3
+lightningDamage:16
+lightningLength:4
+lightningColor:560319
+
+splashDamage:22
+splashDamageRadius:35
+shootEffect:shootBig
+hitEffect:blastExplosion
+despawnEffect:blastExplosion
+
+width:12
+height:10
+lifetime: 40
+
+pierceBuilding: true
+pierceCap: 3
+
+trailChance: 0.3
+
+	}
+	}
+	{
+  name: null1
+  reload: 10
+  rotate: true
+  mirror: true
+  x: 10
+  
+  shootCone: 90
+  rotateSpeed: 2
+  recoil: 0.7
+  shootY:6
+  shake: 0.3
+  y: 10
+  
+  shootSound: missile
+
+
+  bullet: {
+    type: missileBulletType
+    speed: 4
+    damage: 10
+    
+    shootEffect: shootBigSmoke2
+    despawnEffect: explosion
+
+    width: 10
+    height: 18
+
+    lifetime: 60
+
+    splashDamage: 23
+    splashDamageRadius: 88
+
+   status: block
+   statusDuration: 70
+ 
+    }}
+]
+research: magpie

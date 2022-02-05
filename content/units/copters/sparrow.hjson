@@ -1,0 +1,90 @@
+type: flying
+flying: true
+name:  "Sparrow"
+description: "Covers the territory with a hail of shells. " 
+
+health: 410
+armor: 2
+accel: 0.05
+drag: 0.007
+speed: 2
+lowAltitude: "true"
+rotateShooting: "true"
+faceTarget: "true"
+circleTarget: "false" //DONT USE THAT SCRAP, AAAAAA! 
+
+visualElevation: 0.20
+rotateSpeed: 3.4
+range:110
+hitSize: 20
+commandLimit:3
+
+targetFlags: [generator]
+
+engineSize:0
+
+weapons:[
+{
+name: null1
+rotate: false
+mirror:true
+inaccuracy: 9
+reload: 100
+shootSound: "shootBig"
+rotateSpeed: 0.5
+
+shots: 4
+shotDelay: 8
+
+
+x: 6
+y: -2
+bullet:{
+type: "BasicBulletType"
+lifetime: 28
+damage: 14
+speed: 5
+height: 12
+width: 8
+backColor: "#9c6000" 
+
+shootEffect: "shootSmall"
+smokeEffect: "shootSmallSmoke"
+despawnEffect: "explosion"
+}}
+{
+  name: "null"
+  reload: 7
+
+  rotate: "false"
+  mirror: "true"
+  
+  inaccuracy: 6
+
+
+  x:  8
+  y: -2
+
+  shootSound: "pew"
+
+  bullet: {
+
+    type: "BasicBulletType" 
+
+    speed: 3
+    damage: 8
+
+    shootEffect: "shootBigSmoke2"
+  
+
+    width: 5
+    height: 10
+
+    lifetime: 45
+
+    splashDamage: 5
+    splashDamageRadius: 32
+    
+
+}}] 
+research: horizon

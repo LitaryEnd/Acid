@@ -1,0 +1,14 @@
+type: "Wall" 
+name: "Large Aluminium Wall" 
+description: "Protects structures."  
+
+health: 3190
+size: 2
+
+requirements:[
+aluminium/28
+]
+
+category: "defense" 
+
+research: "aluminium-wall" 

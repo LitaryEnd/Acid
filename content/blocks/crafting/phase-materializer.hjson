@@ -1,0 +1,32 @@
+type: "GenericSmelter" 
+name:  "Phase Materializer" 
+description: "Materialize phase-fabric." 
+
+hasPower: true 
+hasItems: true 
+
+outputItem: phase-fabric/9
+size:5
+craftTime: 930
+updateEffect: "steam" 
+itemCapacity:40
+ambientSound: "machine" 
+ambientSoundVolume: 0.5
+
+consumes:{
+power:23
+items:{items:[
+thorium/20
+sand/20
+]}}
+
+requirements:[
+surge-alloy/110
+plastanium/140
+thorium/150
+silicon/120
+]
+
+category: "crafting" 
+
+research: "phase-weaver" 

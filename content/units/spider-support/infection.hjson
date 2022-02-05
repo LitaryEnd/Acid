@@ -1,0 +1,165 @@
+type: "legs"
+                research: toxin
+name: "Infection" 
+description: "Self-propelled artillery mount, has bolters and anti-gravity installation. " 
+
+drag: 0.1
+range:260
+aimDst: 225
+speed: 0.50
+hitSize: 26
+health: 5450
+armor: 6
+rotateSpeed: 1.4
+legCount: 4
+groundLayer:75
+
+legMoveSpace: 2
+legLength: 50
+legLenghtScl: 0.93
+targetFlags: [turret]
+
+landShake: 0.03
+legSpeed: 0.2
+buildSpeed: 1
+
+legBaseOffset: 11
+
+legTrns: 0.58
+
+rippleScale: 2.1
+legExtension: -16
+legSplashDamage: 3
+legSplashRange: 20
+hovering: true
+itemCapacity: 100
+allowLegStep: true
+visualElevation: 0.4
+immunities: [
+slow
+shocked 
+] 
+weapons: [
+{
+  name: pois
+  reload: 200
+  rotate: true
+  mirror: false
+shootY:4
+recoil: 0.4
+  x: 0
+  y: 1
+
+  shootSound: artillery
+rotateSpeed: 1.3
+  bullet: {
+    type: artilleryBulletType
+    speed: 5
+    
+    hitColor: 80CB71
+
+    shootEffect: sparkShoot
+    despawnEffect: explosion
+    width: 15
+    height: 15
+    lifetime: 80
+    splashDamage: 320
+    splashDamageRadius: 80
+    backColor: 80CB71
+    frontColor: 80CB71
+    fragBullets: 10
+fragBullet: {
+type: artilleryBulletType 
+
+splashDamage: 15
+splashDamageRadius: 20
+speed: 2
+
+lifetime: 10
+
+trailChance:0.5
+trailMult:0.5
+trailColor:DE4136FF
+
+width: 7
+status: blasted
+statusDuration: 100
+height: 7
+pierce: true
+despawnEffect: blastExplosion
+
+}
+  }} 
+/*
+{
+name: null
+  reload: 40
+  rotate: true
+  mirror: true
+  x: 5
+  y: 5
+  shootSound: shoot
+  
+  shots: 4
+  shotDelay: 7
+  
+  bullet: {
+    type: LaserBoltBulletType
+    speed: 6
+    damage: 40
+    hitColor: 80CB71
+    shootEffect: sparkShoot
+    despawnEffect: none
+    width: 2
+    height: 4
+    lifetime: 34
+status: slow
+statusDuration: 20
+
+    splashDamage: 15
+    splashDamageRadius: 40
+    backColor: 80CB71
+    frontColor: 80CB71
+    lightningColor: 80CB71
+    lightning: 2
+    lightningLength: 4
+   lightningDamage: 2
+    }} */
+{
+name: null1
+// Plasma gun for a quick departure from position. 
+  reload: 880
+  rotate: false
+  mirror:false
+alternate: false
+  x: 0
+  y: 5
+  shootSound: railgun
+  bullet: {
+    type: BasicBulletType 
+    speed: 5
+    damage: 40
+    hitColor: 80CB71
+    shootEffect: instShoot
+sideAngle: 35
+sideLength: 50
+sideWidth: 45
+
+trailChance: 0.7
+trailColor: "#FFFFFF" 
+
+    despawnEffect: explosion
+    width: 23
+    height: 23
+    lifetime: 65
+    splashDamage: 44
+    splashDamageRadius: 70
+status: unmoving
+statusDuration: 150
+    backColor: "#FFFFFF" 
+    frontColor: "#80CB71" 
+    lightningColor: "#FF7D01"
+    lightning: 7
+    lightningLength: 8
+    lightningDamage: 2
+}}]

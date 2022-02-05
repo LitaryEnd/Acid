@@ -1,0 +1,265 @@
+//Code "Meteor"
+
+type: "PowerTurret" 
+name: "Descriptor"
+description: "Energy shock artillery."
+
+targetAir: "false"
+targetGround: "true"
+
+health: 3600
+size: 7
+reloadTime: 820
+
+powerUse: 70
+
+inaccuracy: 10
+
+rotateSpeed: 1.5
+
+
+restitution: 0.4
+
+recoilAmount: 12
+velocityInaccuracy: 0.2
+
+shootShake: 5
+range: 800
+
+ shootSound: "none" 
+ chargeSound: "descriptor-shock-fire" 
+ 
+	chargeTime: 140
+	chargeMaxDelay: 10
+	chargeEffects: 1
+	
+chargeBeginEffect: {
+	
+    type: ParticleEffect 
+    particles: 1
+    sizeFrom: 0
+    sizeTo: 20
+    length: 0.2
+    lifetime: 140
+    colorFrom: "#FF5845"
+    colorTo: "#FFC1BB"
+    
+} 
+
+	chargeEffect: {
+	
+    type: WaveEffect
+    lifetime: 140
+    sizeFrom: 45
+    sizeTo: 0
+    strokeFrom: 0
+    strokeTo: 5
+    colorFrom: "#FF5845"
+    colorTo: "#FFC1BB"
+	
+	}
+
+shootType:{
+
+type: ArtilleryBulletType
+
+splashDamage: 1100
+splashDamageRadius: 300
+
+speed: 10
+lifetime: 140
+width: 30
+height: 40
+
+frontColor: "#08e8de"
+backColor: "#08e8de"
+
+shootEffect: {
+
+type: MultiEffect
+
+effects:[
+{
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 40
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 30
+}
+{
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 100
+colorTo: "#08e8de"
+colorFrom: "#00ffff"
+lifetime: 100
+}
+]
+}
+
+hitEffect: {
+
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 90
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 25
+
+}
+
+despawnEffect: {
+type: MultiEffect
+effects:[
+
+{
+
+type: WaveEffect
+sizeTo:0
+sizeFrom: 200
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 100
+
+}
+{
+
+type: WaveEffect
+sizeTo: 100
+sizeFrom: 40
+colorTo: "#ff277f"
+colorFrom: "#08e8de"
+lifetime: 50
+
+} 
+{
+
+type: WaveEffect
+sizeTo: 40
+sizeFrom: 140
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 80
+
+}
+{
+
+type: WaveEffect
+sizeTo: 15
+sizeFrom: 60
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 110
+
+}
+{
+
+type: WaveEffect
+sizeTo: 20
+sizeFrom: 220
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 40
+
+}
+{
+
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 100
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 55
+
+}
+{
+
+type: WaveEffect
+sizeTo: 10
+sizeFrom: 70
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 25
+
+}
+{
+
+type: WaveEffect
+sizeTo: 5
+sizeFrom: 40
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 80
+
+}
+{
+
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 80
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 34
+
+}
+{
+
+type: WaveEffect
+sizeTo: 40
+sizeFrom: 20
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 20
+
+}
+{
+
+type: WaveEffect
+sizeTo: 10
+sizeFrom: 200
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 180
+
+}
+{
+
+type: WaveEffect
+sizeTo: 80
+sizeFrom: 130
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 80
+
+}
+{
+
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 180
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 50
+
+}
+] 
+} 
+
+status: "shocked"
+statusDuration: 290
+
+} 
+
+category: "turret"
+
+research: "arrow"
+
+requirements: [
+ toison/1110
+ surge-alloy/850
+ aluminium/500
+ plastanium/440
+  copper/720
+      silicon/1220
+]

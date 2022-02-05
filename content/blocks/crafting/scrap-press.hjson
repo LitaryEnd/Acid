@@ -1,0 +1,29 @@
+type: "GenericSmelter" 
+name:"Scrap Press"
+description: "Softens copper and lead into scrap metal." 
+
+hasPower:true
+hasItems:true
+
+outputItem: scrap/1
+size: 1
+craftTime: 30
+updateEffect: "steam" 
+itemCapacity: 12
+ambientSound: "respawning" 
+ambientSoundVolume: 0.5
+
+consumes:{
+power: 0.2
+items:{items:[
+copper/2
+lead/1
+]}}
+
+requirements:[
+copper/25
+lead/10
+]
+
+category: "crafting" 
+research: "pulverizer"

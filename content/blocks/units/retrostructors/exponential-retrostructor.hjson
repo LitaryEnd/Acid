@@ -1,0 +1,48 @@
+type: "Reconstructor"
+name: "Exponential Retrostructor" 
+description: "Reconstructs units In the following versions."
+
+size: 7
+constructTime: 3000
+
+consumes: {
+  power: 6.6
+  items: {
+    items: [
+    toison/60
+    copper/330
+    silicon/660
+    aluminium/240
+    graphite/200
+    ]
+  }
+liquid:
+ cryofluid/0.25
+} 
+
+requirements: [
+  graphite/900
+  silicon/790
+  titanium/880
+  copper/400
+  plastanium/800
+]
+
+upgrades: [
+  [
+    toxin, infection
+  ]
+[ 
+woodpecker, symmetry
+] 
+[
+spark, eel
+] 
+[
+zenith, magpie
+] 
+]
+
+category: "units"
+
+research: "exponential-reconstructor"

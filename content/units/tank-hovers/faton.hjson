@@ -1,0 +1,163 @@
+type: "legs"
+name: "Faton"
+description: "Shoots electron balls" 
+
+health: 550
+armor: 3
+speed: 1
+flying: false
+
+range: 110
+targetFlags: [battery,generator] 
+
+groundLayer: 75
+
+commandLimit: 3
+
+hitSize: 13
+drag: 0.13
+itemCapacity: 40
+rotateSpeed: 3
+ 
+canDrown: false
+
+mechStepParticles: false
+
+hovering: true
+
+legCount: 0
+legSpeed: 0.0
+
+rotateShooting: true
+
+singleTarget: true
+
+visualElevation: 0.13
+
+lowAltitude: true
+
+weapons:[
+   {
+ name:  "null" 
+
+    reload: 50
+    mirror: "false"
+    top: "false"
+
+    x: 0
+    y: 0
+
+    shootY: 4
+
+    
+    shake: 5
+
+    rotate: false
+   // rotateSpeed: 2
+
+    shootSound: "plasmaShoot" 
+    
+    
+
+			bullet: {
+
+
+type:  empBulletType 
+
+speed:5
+lightRadius: 7
+
+damage: 50
+splashDamage: 180
+splashDamageRadius: 110
+
+
+timeDuration: 60
+
+lightOpacity: 0.7
+status: "electrified"
+statusDuration: 80
+shootEffect:hitEmpSpark
+smokeEffect: shootBigSmoke2
+lifetime: 50
+sprite: "circle-bullet" 
+frontColor: "#ffffff" 
+backColor:  "#57fec7" 
+trailLength: 10
+
+scaleVelocity: true
+healPercent: 5
+
+despawnEffect: hitEmpSpark
+
+//trailWidth: 3 /// DONT RUN COMMAND IN THIS BULLET TYPE
+//trailInterval: 11
+//trailChance: 0.3
+//trailRotation: true
+
+
+width: 10
+height: 18
+
+trailColor: "#79ffe9" 
+
+hitShake: 4
+hitEffect: {
+type: MultiEffect
+effects: [
+{
+type: WaveEffect
+sizeTo: 60
+sizeFrom: 60
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 50
+sizeFrom: 60
+lifetime: 30
+colorTo: "#78c8ec" 
+colorFrom: "#37ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 70
+sizeFrom: 60
+lifetime: 30
+colorTo: "#78c8ec" 
+colorFrom: "#37ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 20
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 20
+sizeFrom: 0
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 15
+sizeFrom: 0
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+} 
+] 
+} 
+
+ }
+}
+
+] 
+research: ion

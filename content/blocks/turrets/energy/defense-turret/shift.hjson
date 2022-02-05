@@ -1,0 +1,29 @@
+type: "TractorBeamTurret" 
+name: "Shift" 
+description: "Attracts enemies."
+
+size: 3
+force: 30
+targetGround: false
+scaledForce: 50
+health: 710
+range: 440
+damage: 0.1
+rotateSpeed: 5
+status: "electrified"
+statusDuration: 50
+
+hasPower: true
+
+powerUse: 17.55
+
+category: "turret" 
+
+research: "parallax" 
+
+requirements:[
+aluminium/160
+graphite/12
+silicon/140
+plastanium/150
+]

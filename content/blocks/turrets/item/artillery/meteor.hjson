@@ -1,0 +1,164 @@
+type: "ItemTurret" 
+name: "Meteor"
+description: "Artillery turret, covers a huge area."
+
+targetAir:false
+targetGround: true
+health: 2000
+size: 5
+reloadTime: 160
+
+inaccuracy: 9
+
+rotateSpeed: 1.9
+shootEffect: "none"
+
+shots: 8
+
+
+ammoEjectBack: 4
+
+restitution: 0.08
+recoilAmount: 11
+velocityInaccuracy: 0.56
+
+shootSound: "artillery"
+shootShake: 4
+range: 420
+
+ammoTypes: {
+
+ graphite: {
+ type: ArtilleryBulletType
+ speed: 5
+ lifetime: 280
+ ammoMultiplier: 2
+ reloadMultiplier: 0.5
+ width: 13
+ height: 15
+splashDamage: 24
+    splashDamageRadius: 76
+
+fragBullets: 4
+fragBullet: {
+type: BasicBulletType
+speed: 1
+lifetime: 30
+drag: 0.0005
+splashDamage: 6
+    splashDamageRadius: 10
+width: 10
+height: 5
+backColor: "#ffffff" 
+frontColor: "#ffffff" 
+pierce: true
+homingPower: 0.5
+homingRange: 50
+}
+ }
+
+  thorium: {
+  type: ArtilleryBulletType
+ speed: 5
+ lifetime: 280
+
+ ammoMultiplier: 1
+ reloadMultiplier: 1
+
+ width: 16
+ height: 15
+
+splashDamage: 24
+    splashDamageRadius: 32
+	
+	despawnEffect: {
+
+type: WaveEffect
+
+sizeTo: 60
+sizeFrom: 0
+
+lifetime: 20
+
+} 
+
+	hitEffect: explosion
+
+ }
+
+ pyratite: {
+ type: ArtilleryBulletType
+ speed: 5
+ lifetime: 280
+ ammoMultiplier: 1
+ incendSpread: 2
+ incendAmount: 1
+ reloadMultiplier: 1
+splashDamage: 44
+    splashDamageRadius: 44
+ width: 17
+height: 14
+ frontColor: #FFB464
+ backColor: #FFDA73
+homingPower: 0.05
+despawnEffect: blastExplosion
+
+ }
+
+surge-alloy: {
+type: ArtilleryBulletType
+speed: 5
+ lifetime: 280
+ ammoMultiplier: 1
+ homingPower: 1
+ homingRange: 20
+ reloadMultiplier:2.2
+splashDamage: 30
+    splashDamageRadius: 60
+width: 24
+height: 16
+
+    lightning: 4
+lightningDamage: 23
+    lightningLength: 8
+
+
+ }
+
+ plastanium: {
+ type: ArtilleryBulletType
+ speed: 5
+ lifetime: 280
+ ammoMultiplier: 5
+ homingPower: 0.4
+ homingRange: 80
+ reloadMultiplier: 1.4
+splashDamage: 54
+    splashDamageRadius: 53
+ width:21
+height:20
+
+fragBullets: 3
+fragBullet: {
+type: BasicBulletType
+damage: 8
+speed: 8
+lifetime: 10
+width: 10
+despawnEffect: explosion
+height: 3
+backColor: "#ffffff" 
+frontColor: "#ffffff" 
+pierce: false
+}
+ }
+  } 
+category: "turret"
+
+research: "ripple"
+
+requirements: [
+ toison/540
+  graphite/340
+      plastanium/190
+]

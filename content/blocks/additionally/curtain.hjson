@@ -1,0 +1,32 @@
+type: "ForceProjector"
+name: "Curtain"
+description: "Protects structures by creating a shield." 
+
+size: 4
+hasPower: true
+health: 1750
+radius: 40
+phaseRadiusBoost: 250
+phaseUseTime: 80
+
+cooldownNormal: 400
+cooldownLiquid: 40
+cooldownBrokenBase: 440
+
+
+consumes:{
+power: 48
+items:{items:[
+phase-fabric/1
+]}} 
+
+requirements:[
+phase-fabric/50
+plastanium/100
+silicon/200
+surge-alloy/120
+]
+
+category: "effect"
+
+research: "force-projector"

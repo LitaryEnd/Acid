@@ -1,0 +1,175 @@
+type: "ItemTurret" 
+name: "Traser" 
+description: "Shoots 180° with a lot of bolts."
+
+health: 2500
+size: 4
+reloadTime: 60
+cooldown: 50
+rotateSpeed: 2.6
+shootSound: "pew"
+shootShake: 2.5
+shots: 3
+
+spread: 7
+inaccuracy: 8
+shootEffect: "blastExplosion" 
+range: 440
+burstSpacing: 5
+ammoTypes: {
+
+  thorium:{
+
+ speed: 5
+ lifetime: 70
+ damage: 39
+ ammoMultiplier: 2
+
+backColor: "#DE4136" 
+frontColor: "#ffffff"
+ 
+ reloadMultiplier: 1
+ width: 10
+ height: 17
+
+ lightning: 1
+  lightningDamage: 3
+    lightningLength: 1
+
+homingPower:0.05
+homingRange:58
+
+knockback:1.4
+
+ }
+
+ pyratite: {
+
+ speed: 5
+ lifetime: 80
+ damage: 26
+ ammoMultiplier: 1
+
+ incendSpread: 2
+ incendAmount: 1
+
+ reloadMultiplier: 0.6
+ width: 17
+height: 12
+
+ frontColor: "#FFB464" 
+ backColor: "#FFDA73" 
+
+homingPower:0.1
+
+
+knockback:1.3
+
+fragBullets: 3
+fragBullet: {
+
+type: BasicBulletType
+
+splashDamage: 8
+    splashDamageRadius: 36
+
+speed: 4
+lifetime: 44
+width: 8
+height: 6
+pierce: false 
+
+homingPower: 0.5
+homingRange: 40
+
+despawnEffect: explosion
+hitEffect: explosion
+
+fragBullets: 8
+fragBullet: {
+
+type: BasicBulletType
+
+splashDamage: 3
+    splashDamageRadius: 20
+
+speed: 4
+lifetime: 15
+width: 3
+height: 2
+pierce: false 
+
+homingPower: 0.5
+homingRange: 40
+
+ }}}
+
+  surge-alloy: {
+
+ speed: 5
+ lifetime: 90
+ damage: 50
+ ammoMultiplier: 1
+
+ reloadMultiplier: 1
+knockback:1
+width: 17
+height: 16
+
+    lightning: 3
+    lightningDamage: 5
+    lightningLength: 5
+
+knockback:1.8
+
+ }
+
+plastanium: {
+
+ speed: 7
+ lifetime: 50
+ damage: 30
+ ammoMultiplier: 3
+
+ homingPower: 1
+ homingRange: 20
+
+ reloadMultiplier: 1.4
+ width:13
+height:16
+
+splashDamage: 40
+splashDamageRadius: 120
+
+
+knockback:1.6
+
+fragBullets: 4
+fragBullet: {
+
+type: BasicBulletType
+damage: 8
+speed: 4
+lifetime: 5
+width: 10
+height: 10
+pierce: false 
+
+homingPower: 0.5
+homingRange: 40
+
+}
+ }
+ }
+
+category: "turret"
+
+research: "genesis" 
+
+requirements: [
+ 
+  graphite/130
+    titanium/140
+      plastanium/50
+       copper/130
+]

@@ -1,0 +1,35 @@
+       name: "block"
+           localizedName: "Blocking"
+
+           description: "Blocks the control of motors and servo drives." 
+
+           
+           reloadMultiplier: 0.5
+           speedMultiplier: 0.45
+
+           effectChance: 0.5
+
+           effect: {
+
+           type: "ParticleEffect"
+
+           particles: 2
+           length: 1
+           
+           lifetime: 10
+
+           sizeFrom: 8
+           sizeTo: 0
+
+           colorFrom: "#fffc2e"
+           colorTo: "#b2b382"
+
+          } 
+           
+             /* colors:["#b2b382" "#fffc2e" "#FFFFFF"]
+              sideAngle: 20
+
+              sideLength: 1
+
+              sideWidth: 1
+*/ /// not used

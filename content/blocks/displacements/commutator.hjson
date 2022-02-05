@@ -1,0 +1,15 @@
+type: "router" 
+name: "Commutator" 
+description: "Evenly distributes resources across eight paths."
+size: 3
+health: 460
+
+
+requirements:[
+lead/10
+copper/14
+]
+
+category: "distribution" 
+
+research: "distributor" 

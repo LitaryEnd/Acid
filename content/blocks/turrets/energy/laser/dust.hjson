@@ -1,0 +1,171 @@
+type: LaserTurret
+targetAir: "true"
+name: "Dust"
+description: "A powerful laser that cuts through everything in its path."
+details: "Unfinished installation." 
+
+chargeTime: 80
+cooldown: 0.03
+coolantMultiplier: 1.5
+health: 4510
+size: 10
+update: "true"
+
+shootShake: 15
+
+hasPower: "true"
+
+shootCone: 116
+rotateSpeed: 1.22
+
+shootSound: "greenLaserShoot"
+loopSound: "beam"
+loopSoundVolume: 2.5
+
+
+powerUse: 64
+ 
+
+
+    chargeSound: "lasercharge2" 
+	chargeTime: 65
+	chargeMaxDelay: 10
+	chargeEffects: 1
+	chargeBeginEffect: {
+    type: ParticleEffect 
+    particles: 2
+    sizeFrom: 0
+    sizeTo: 50
+    length: 0.2
+    lifetime: 65
+    colorFrom: FF5845FF
+    colorTo: FFC1BBFF
+    
+}
+	chargeEffect: {
+    type: WaveEffect
+    lifetime: 65
+    sizeFrom: 45
+    sizeTo: 0
+    strokeFrom: 0
+    strokeTo: 5
+    colorFrom: "#FF5845"
+    colorTo: "#FFC1BB"
+	}
+smokeEffect: {
+     type:WaveEffect 
+     lifetime:210
+     sizeTo:100
+     sizeFrom:0
+     strokeTo:0
+     strokeFrom:5
+     colorTo: "#ffc1bb" 
+     colorFrom: "#79F2EE"
+} 
+
+shootEffect: {
+
+type: WaveEffect
+lifetime: 30
+sizeTo:300
+sizeFrom: 0
+} 
+
+shootShake: 2
+range: 600
+reloadTime: 337
+firingMoveFract: 0.6
+shootDuration: 328
+shots: 5
+
+
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 450
+  length: 600
+
+shootCone: 45
+  hitEffect: {
+
+type: MultiEffect 
+
+effects:[
+{
+type: WaveEffect
+lifetime: 150
+sizeTo: 80
+sizeFrom: 10
+} 
+{
+type: WaveEffect
+lifetime: 40
+sizeTo: 150
+sizeFrom: 10
+} 
+{
+type: WaveEffect
+lifetime: 160
+sizeTo: 90
+sizeFrom: 10
+} 
+{
+type: WaveEffect
+lifetime: 300
+sizeTo: 300
+sizeFrom: 10
+} 
+{
+type: WaveEffect
+lifetime: 100
+sizeTo: 40
+sizeFrom: 0
+}
+{ 
+type: ParticleEffect 
+
+particles: 6
+length: 2
+lifetime: 120
+sizeTo: 0
+sizeFrom: 50
+} 
+] 
+} 
+  drawSize: 1800
+
+  incendChance: 1
+  incendSpread: 7
+
+  incendAmount: 2
+
+status: melting
+statusDuration: 240
+
+
+ 
+}
+
+	requirements: [
+
+aluminium/2300
+phase-fabric/1300
+
+toison/1680
+lead/890
+silicon/2430
+plastanium/1450
+surge-alloy/1850
+]
+
+category: "turret"
+
+research: "foreshadow" 
+
+consumes: {
+  liquid: {
+    liquid: cryofluid
+    amount: 0.6
+    optional: false
+    booster: true
+  }
+}

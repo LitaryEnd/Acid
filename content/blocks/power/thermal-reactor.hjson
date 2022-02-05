@@ -1,0 +1,24 @@
+ type: "thermalGenerator"
+name: "Thermal Reactor"
+description: "Producing energy from heat." 
+
+size: 5
+
+powerProduction: 3
+floating: true
+generateEffect: "redgeneratespark" 
+
+ambientSound: "hum"
+ambientSoundVolume: 0.20
+
+requirements: [
+titanium/300
+graphite/450
+silicon/110
+plastanium/320
+thorium/210
+] 
+
+category: "power" 
+
+research: "thermal-generator"

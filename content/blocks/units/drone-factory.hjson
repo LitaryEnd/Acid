@@ -1,0 +1,47 @@
+type: "unitFactory"
+
+name: "Drone factory"
+description: "Produces drones."
+
+size: 3
+
+consumes: {
+power:  2
+} 
+
+plans: [
+{
+unit:  "regeneration-drone" 
+requirements: [
+silicon/10
+copper/10
+] 
+time: 310
+} 
+{
+unit: "logistic-drone"
+requirements: [
+silicon/30
+graphite/10
+titanium/10
+] 
+time: 430
+} 
+] 
+
+requirements: [
+silicon/30
+copper/50
+lead/20
+] 
+
+category: "units"
+research: "ground-factory"
+
+
+
+
+
+
+
+

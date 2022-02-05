@@ -1,0 +1,163 @@
+type: flying
+flying: true
+name: "Hawk" 
+description:"Bombards the area under him. Can shoot back." 
+health: 22970
+armor: 10
+accel: 0.14
+drag: 0.012
+speed: 1.8
+
+lowAltitude: true
+
+rotateShooting:true
+ 
+circleTarget: true 
+
+visualElevation: 0.60
+rotateSpeed: 1.5
+range: 200
+lightRadius: 240
+hitSize: 75
+commandLimit:2
+
+targetFlags: [factory, turret, battery, reactor]
+
+engineSize: 16
+    trailX: 37.0
+    trailY: -79.0
+    trailScl: 5.8
+    trailLength: 120.0
+	immunities: [
+		
+shocked
+burning
+	]
+weapons:[
+ {
+ name: null1
+reload: 160
+x: 16
+y: 0
+mirror: true
+rotate:false
+rotateSpeed: 1.2
+
+shots: 2
+shootSound: null
+
+shootCone: 50
+shotDelay: 60
+
+bullet:{
+type: bombBulletType
+
+width: 30
+height: 20
+
+speed: 1
+
+drag: 0.15
+
+lifetime: 70
+
+hitColor: "#FFFFFF" 
+
+hitEffect: "blastExplosion" 
+shootEffect: "none" 
+
+despawnEffect: {
+
+type: WaveEffect
+
+sizeTo: 100
+sizeFrom: 0
+
+}
+
+splashDamage: 290
+    splashDamageRadius: 110
+
+trailChance: 0.5
+
+lightningColor: "#79F2EE" 
+lightning: 2
+lightningDamage:5
+lightningLength:4
+lightningLengthRand: 8
+
+fragBullets: 100
+fragBullet: {
+type: bombBulletType
+lifetime: 5
+
+speed: 11
+
+splashDamage: 4
+    splashDamageRadius: 39
+lifetime: 5
+
+width: 0
+height: 0
+
+
+
+}
+
+}}
+
+{
+
+name: hawk-autogun
+
+mirror:false
+
+rotate: "true" 
+rotateSpeed: 2
+
+shootCone: 90
+
+shootSound: shootBig
+
+x:0
+y:24
+
+reload: 10
+bullet: {
+
+type: basicBulletType
+
+damage: 82
+
+
+
+status: blasted
+statusDuration: 80
+
+width: 10
+height: 15
+
+speed: 5
+lifetime: 50
+}}
+ ]
+/* abilities: [/// deleted
+ {
+              type: UnitSpawnAbility
+              spawnX: -16
+              spawnY: -6
+              unit: "horizon"
+              spawnTime: 890
+  }
+{
+              type: UnitSpawnAbility
+              spawnX: 16
+              spawnY: -6
+              unit: "horizon"
+              spawnTime: 891
+  }
+]  */
+
+research: {
+parent: dove
+} 

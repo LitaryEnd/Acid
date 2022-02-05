@@ -1,0 +1,6 @@
+name: "Special"
+description: "Not ready or never complete content."
+research: "acid-not-ready-content"
+buildViibility: editor
+alwaysUnlocked : true
+allowResearch: true

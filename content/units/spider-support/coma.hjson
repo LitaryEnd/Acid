@@ -1,0 +1,187 @@
+type: "legs"
+research: "pathology"
+name: "Coma"
+description: "Self-propelled artillery installation, has heavy bolters." 
+
+drag: 0.10
+range:300
+targetAir: true
+speed: 0.56
+hitSize: 30
+health: 35750
+armor: 15
+rotateSpeed: 1.5
+legCount: 6
+legMoveSpace: 0.8
+targetFlags: [reactor, generator]
+legPairOffset: 3
+rippleScale: 4
+groundLayer:75
+legLenghtScl: 0.9
+legBaseOffset: 8
+legTrns: 0.6
+legLength: 80
+landShake: 2
+legSpeed: 0.29
+itemCapacity: 1000
+buildSpeed: 3
+legExtension: 30
+legSplashDamage: 10
+legSplashRange: 30
+immunities: [
+		"burning" 
+		"shocked"
+		"slow" 
+	] 
+hovering: true
+allowLegStep: true 
+visualElevation: 1.20
+weapons: [
+{
+  name: null1
+  reload: 400
+  rotate: false
+  mirror: false
+  x: 0
+  y: 14
+
+  shootSound: artillery
+  bullet: {
+    type: artilleryBulletType
+    speed: 4
+    damage: 12
+    hitColor: 8600FF
+    shootEffect: sparkShoot
+    despawnEffect: {
+type: MultiEffect
+effects: [
+{
+type: WaveEffect
+sizeTo: 100
+lifetime: 25
+sizeFrom: 5
+colorTo: "#88978e" 
+colorFrom: "#6645ee" 
+} 
+{
+type: WaveEffect
+sizeTo: 50
+sizeFrom: 0
+lifetime: 60
+colorTo: "#88ecdf" 
+colorFrom: "#3343ee" 
+} 
+] 
+} 
+    
+    width: 20
+
+    height: 30
+    lifetime: 170
+drag: 0.002
+    splashDamage: 330
+    splashDamageRadius: 130
+buildingDamageMultiplier: 0.4
+    
+ 
+status: shocked 
+statusDuration: 185
+    lightningColor: "#FF7D01" 
+    lightning: 4
+    lightningLength: 7
+    lightningDamage: 8
+	
+	fragBullets: 7,
+fragBullet: {
+type: artilleryBulletType
+damage: 8
+drag: 0.005
+speed: 4
+
+splashDamage: 20
+splashDamageRadius: 50
+
+despawnEffect: {
+
+type: "WaveEffect"
+lifetime: 40
+sizeTo: 30
+sizeFrom: 2
+colorTo: "#67644e" 
+colorFrom: "#44436e" 
+}
+}
+  }}
+
+{
+  name: sin
+  reload: 60
+  rotate: false
+  mirror: true
+  x: 17
+  y: 6
+  shootSound: shootBig
+recoil: 3
+shots: 5
+shotDelay: 6
+  bullet: {
+    type: BasicBulletType
+    speed: 6
+    damage: 80
+    
+
+    shootEffect: shootBigSmoke
+    despawnEffect: explosion
+    width: 14
+pierce: true
+
+    height: 16
+    lifetime: 40
+    
+    
+    lightningColor: "#80CB71" 
+    lightning: 2
+lightningDamage: 40
+    lightningLength: 1
+}}
+/*{
+  name: anti-air-gun
+  reload: 20
+recoil: 2
+  rotate: true
+  mirror: false
+  x: 0
+  y: 0
+rotateSpeed: 3.5
+  shootSound: shootBig
+  bullet: {
+    type: BasicBulletType
+    speed: 5
+    damage: 80
+    hitColor: 80CB71
+    shootEffect: shootBigSmoke2
+    despawnEffect: explosion
+    width: 8
+    height: 22
+    lifetime: 40
+    splashDamage: 36
+pierce: true
+
+pierceCap: 2
+    splashDamageRadius: 60
+    backColor: "#FFFFFF" 
+    frontColor: "#80CB71" 
+    lightningColor: "#80CB71"
+    lightning: 3
+lightningDamage: 12
+    lightningLength: 2
+}} */
+] 
+abilities: [
+{
+type: "mindustry.entities.abilities.RepairFieldAbility"
+range: 120
+amount: 560
+reload: 740
+}
+]

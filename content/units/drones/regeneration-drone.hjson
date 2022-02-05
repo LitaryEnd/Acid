@@ -1,0 +1,60 @@
+type: flying
+flying: true
+
+name:  "Repair drone"
+description: "It is created in the regeneration station. Restores buildings that have received damage."
+ 
+controller: "RepairAI"
+
+health: 200
+armor: 0
+accel: 0.05
+drag: 0.05
+speed: 2.4
+
+lowAltitude: "true" 
+rotateShooting: "true"
+faceTarget: "true"
+
+visualElevation: 0.10
+rotateSpeed: 3
+
+range:120
+
+hitSize: 8
+
+commandLimit:0
+
+engineSize:0
+
+weapons:[
+{
+  name: "regeneration-drone-weapon"
+  reload: 15
+
+  rotate: "true"
+  rotateSpeed: 10
+  
+  mirror: "false"
+  
+  inaccuracy: 6
+
+  x: 0
+  y: 0
+
+  shootSound: "lasershoot"
+
+  bullet: {
+
+    type: "LaserBoltBulletType" 
+
+    speed: 4
+healPercent: 5
+    shootEffect: "none" 
+    lifetime: 45
+	collidesTeam: "true"
+backColor: "#ffffff" 
+frontColor: "#09fe99" 
+   
+}}] 
+research: drone-factory

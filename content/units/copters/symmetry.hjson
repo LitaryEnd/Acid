@@ -1,0 +1,81 @@
+type: flying
+flying: "true"
+name: "Symmetry"
+description: "Fires a lot of missiles. " 
+
+health: 8800
+armor:  12
+accel: 0.05
+drag: 0.08
+speed: 1.75
+
+lowAltitude: "true"
+rotateShooting: "true" 
+faceTarget: "true" 
+
+visualElevation: 0.25
+rotateSpeed: 1.6
+range: 250
+hitSize: 38
+commandLimit: 3
+
+// targetFlags reactor factory turret
+
+engineSize:0
+//Engine fully off
+
+immunities: [
+ "blasted" 
+] 
+
+weapons:[
+{
+
+name: "null"
+
+rotate: "true"
+mirror: "true"
+
+rotateSpeed: 4
+
+inaccuracy:  9
+reload: 13
+shots: 3
+shootCone: 40
+angleCone: 40
+angleOffset: -35
+
+shootSound: "missile" 
+x: 22
+y: 5
+
+rotateShooting: "true" 
+
+bullet:{
+
+type: MissileBulletType
+damage: 40
+
+speed: 5
+
+weaveScale: 7
+weaveMag: 2
+
+height:13
+width:8
+
+lifetime: 50
+
+shootEffect: "none" 
+smokeEffect: "shootSmallSmoke" 
+hitEffect: "lightningShoot" 
+despawnEffect: "explosion" 
+
+backColor: "#8e8880" 
+
+status: "blasted" 
+statusDuration: 150
+
+}}] 
+
+research: "woodpecker" 

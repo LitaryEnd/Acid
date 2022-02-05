@@ -1,0 +1,29 @@
+type: "GenericCrafter"
+
+name: "Sanstorm"
+description: "Removes sand from the atmosphere." 
+
+size: 2
+craftTime: 120
+
+hasPower: "true" 
+hasItems: "true" 
+
+updateEffect: "none" 
+
+itemCapacity: 10
+
+ambientSound: "machine"
+amvientSoundVolume: 1
+
+outputItem: sand/1
+
+research: "scrap-press"
+
+category: "crafting" 
+
+requirements: [
+copper/45
+coal/20
+graphite/30
+] 

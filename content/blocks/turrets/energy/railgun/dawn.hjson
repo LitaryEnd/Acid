@@ -1,0 +1,115 @@
+type: "itemTurret" 
+name: "Dawn"
+description: "Shoots with accelerated projectiles." 
+
+details: "Restored technology. According to derelict objects, was the main opponent of T7 units. The last such turrets were dismantled and placed in warehouses in reduced capacity." 
+
+health: 2560
+size: 6
+coolantMultiplier: 0.79
+recoilAmount: 6
+range: 780
+rotateSpeed: 1.1
+
+restitution: 0.011
+reloadTime: 990
+maxAmmo: 10
+shootSound: "railgun" 
+cooldown: 0.06
+shootShake: 13
+
+powerUse: 40
+
+
+ammoTypes: {
+  surge-alloy: {
+    type: PointBulletType
+    //drag: netЬ
+
+    shootEffect: "instShoot" 
+    hitEffect: "instHit" 
+    smokeEffect: "smokeCloud" 
+    trailEffect: "instTrail" 
+    despawnEffect: "instBomb" 
+
+    
+
+status: block
+statusDuration: 80
+    damage: 965
+    buildingDamageMultiplier: 0.34
+trailColor: "#FF7D01"
+hitColor: "#FF2300" 
+    speed: 2000
+    hitShake: 2
+    
+incendChance: 1
+  incendSpread: 4
+  incendAmount: 2
+
+lightningDamage: 236
+lightningLengthRand: 20
+lightningColor: "#DE4136" 
+lightningLength:10
+lightning: 4
+
+splashDamage: 110
+    splashDamageRadius: 150
+
+fragBullets: 2
+fragBullet: {
+type: artilleryBulletType
+damage: 6
+splashDamage: 28
+    splashDamageRadius: 46
+drag: 0.04
+speed: 5
+status: blasted
+statusDuration: 180
+lifetime: 30
+width: 10
+height: 5
+backColor: "#107278" 
+frontColor: "#807275"
+pierceBuilding: true
+homingPower: 0.5
+homingRange: 60
+
+
+
+despawnEffect:{
+type: WaveEffect
+lifetime: 5
+sizeTo: 40
+sizeFrom: 5
+strokeTo:0
+strokeFrom:6
+colorFrom: "#FF5845"
+colorTo: "#FFC1BB"
+} 
+hitEffect:{
+type: WaveEffect
+lifetime: 10
+sizeTo: 40
+sizeFrom: 5
+strokeTo:0
+strokeFrom:4
+colorFrom: "#FF5845"
+colorTo: "#FFC1BB"
+} 
+
+}
+  }
+}
+
+ requirements: [
+	silicon/1000
+surge-alloy/1220
+plastanium/700
+toison/740
+aluminium/1025
+]
+
+category: "turret"
+
+research: "foreshadow"

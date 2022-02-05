@@ -1,0 +1,28 @@
+type: "MendProjector"
+name: "Regeneration Station"
+description: "Has a large radius of treatment, a regeneration block. Creates a Drone." 
+
+size: 3
+reload: 200
+range: 300
+healPercent: 4
+phaseBoost: 4
+phaseRangeBoost: 0
+health: 800
+
+consumes:{
+power: 25
+items:{items:[
+surge-alloy/1
+]}} 
+
+requirements: [
+toison/70
+surge-alloy/60
+titanium/90
+silicon/110
+]
+
+category: "effect" 
+
+research: "force-projector"

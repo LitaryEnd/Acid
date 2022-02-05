@@ -1,0 +1,17 @@
+type: "powerNode" 
+name: "Toison power node"
+description: "Connects all buildings in a large radius."
+
+maxNodes: 13
+size: 4
+laserRange: 55
+
+requirements:[
+toison/80
+surge-alloy/20
+titanium/70
+]
+
+category: "power" 
+
+research: "surge-tower" 

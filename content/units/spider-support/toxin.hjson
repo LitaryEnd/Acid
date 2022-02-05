@@ -1,0 +1,156 @@
+type: "legs" 
+             research: {
+             parent: "disease"
+             } 
+name: "Toxin" 
+description: "Shoots from blasters and  missiles. Regenerates most of the terrain." 
+
+range: 140
+drag: 0.1
+speed: 0.70
+hitSize: 18
+health: 670
+armor: 5
+rotateSpeed: 2.5
+legCount: 6
+
+groundLayer:75
+
+faceTarget: "true"
+
+legMoveSpace: 1.4
+legBaseOffset: 2
+legLength: 16
+legTrns: 0.8
+
+landShake: 0.4
+legSpeed: 0.2
+buildSpeed: 0.60
+legExtension: 4
+legSplashDamage: 3
+legSplashRange: 15
+
+hovering: "true"
+allowLegStep: "true"
+
+visualElevation: 0.40
+
+immunities: [
+
+"shocked"
+"unmoving"
+
+] 
+
+targetFlags: [battery, generator, reactor]
+
+weapons: [
+
+{
+  name: "tox"
+  
+  reload: 25
+  rotate: "true"
+  mirror: "true"
+  
+  x: 6
+  y: -5
+
+  shootSound: sap
+  
+  bullet: { 
+  
+    type: "laserBoltBulletType"
+
+    speed: 4
+    damage: 25
+    hitColor: "#8600FF"
+
+    shootEffect: "none"
+    despawnEffect: "explosion"
+	
+    width: 2
+
+status: "shocked"
+statusDuration: 50
+
+    height: 3
+    lifetime: 40
+	
+pierce: "true"
+
+pierceCap: 2
+    
+    splashDamage: 4
+    splashDamageRadius: 33
+	
+    backColor: "#80CB71"
+    frontColor: "#80cb71"
+    
+}} 
+
+{
+
+  name: null
+  
+  reload: 60
+  
+  rotate: "false"
+  mirror: "true"
+  
+  x: 4
+  y: 7
+  
+  shootSound: missile
+  
+  shots: 3
+  shotDelay: 8
+  
+  bullet: { 
+  
+    type: "missileBulletType"
+	
+    speed: 3
+    damage: 20
+	
+drag: 0.001
+
+    hitColor: "#8600FF"
+    shootEffect: "sparkShoot"
+    despawnEffect: "smoke"
+	
+trailColor: "#80CB71" 
+
+trailChance: 0.5
+
+    width: 10
+    height:10
+	
+    lifetime: 50
+	
+    splashDamage: 6
+    splashDamageRadius: 30
+	
+    backColor: "#80CB71"
+    frontColor: "#80CB71"
+    lightningColor: "#80CB71"
+	
+    lightning: 1
+    lightningLength: 2
+	
+}} 
+
+]
+
+abilities: [
+
+{
+
+type: "mindustry.entities.abilities.RepairFieldAbility"
+range: 120
+amount: 120
+reload: 420
+
+}
+
+]
