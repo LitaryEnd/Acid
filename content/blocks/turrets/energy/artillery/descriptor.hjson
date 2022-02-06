@@ -146,6 +146,36 @@ lifetime: 80
 {
 
 type: WaveEffect
+sizeTo: 50
+sizeFrom: 270
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 80
+
+}
+{
+
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 300
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 40
+
+}
+{
+
+type: WaveEffect
+sizeTo: 200
+sizeFrom: 400
+colorTo: "#08e8de"
+colorFrom: "#08e8de"
+lifetime: 20
+
+}
+{
+
+type: WaveEffect
 sizeTo: 15
 sizeFrom: 60
 colorTo: "#08e8de"
@@ -240,6 +270,16 @@ sizeTo: 0
 sizeFrom: 180
 colorTo: "#08e8de"
 colorFrom: "#08e8de"
+lifetime: 50
+
+}
+{
+
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 200
+colorTo: "#04242e"
+colorFrom: "#04242e"
 lifetime: 50
 
 }
