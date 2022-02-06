@@ -41,7 +41,7 @@ shocked
 ] 
 weapons: [
 {
-  name: pois
+  name: "infection-weapon"
   reload: 200
   rotate: true
   mirror: false
