@@ -69,6 +69,33 @@ const woodpecker = extend(UnitType, "woodpecker", {
 	}
 }); 
 
+const symmetry = extend(UnitType, "symmetry", { 
+	draw(unit) { 
+		this.super$draw(unit); 
+		Draw.rect( 
+			"acid-s4-rotor", 
+			unit.x + Angles.trnsx(unit.rotation - 90, 0, 0),
+			unit.y + Angles.trnsy(unit.rotation - 90, 0, 0), 
+			Time.time * -10); 
+		Draw.rect( 
+			"acid-s4-rotor-outline", 
+			unit.x + Angles.trnsx(unit.rotation - 90, 0, 0), 
+			unit.y + Angles.trnsy(unit.rotation - 90, 0, 0),
+			Time.time * -10); 
+   Draw.rect(
+			"acid-s3-rotor", 
+			unit.x + Angles.trnsx(unit.rotation - 90, 0, 0), 
+			unit.y + Angles.trnsy(unit.rotation - 90, 0, 0), 
+			Time.time * -30); 
+		Draw.rect( 
+			"acid-s3-rotor-outline", 
+			unit.x + Angles.trnsx(unit.rotation - 90, 0, 0), 
+			unit.y + Angles.trnsy(unit.rotation - 90, 0, 0), 
+			Time.time * -30); 
+	}
+}); 
+
+
 /*
 
 unit.constructor = () => extend(UnitEntity, {}); 
@@ -79,4 +106,4 @@ sparrow.constructor = () => extend(UnitEntity, {});
 
 woodpecker.constructor = () => extend(UnitEntity, {}); 
 
-
+symmetry.constructor = () => extend(UnitEntity, {});
