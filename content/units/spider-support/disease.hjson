@@ -35,7 +35,7 @@ immunities: [
 
 weapons: [
 {
-  name: dis
+  name: "disease-weapon"
   reload: 50
   
   rotate: "false"
