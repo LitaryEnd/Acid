@@ -4,16 +4,16 @@ description: "Has a large radius of treatment, a regeneration block. Creates a D
 
 size: 3
 reload: 200
-range: 300
+range: 350
 healPercent: 4
 phaseBoost: 4
 phaseRangeBoost: 0
 health: 800
 
 consumes:{
-power: 25
+power: 20
 items:{items:[
-surge-alloy/1
+silicon/1
 ]}} 
 
 requirements: [
