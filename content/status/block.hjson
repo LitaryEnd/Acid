@@ -7,7 +7,7 @@
            reloadMultiplier: 0.5
            speedMultiplier: 0.45
 
-           effectChance: 0.5
+           effectChance: 0.25
 
            effect: {
 
