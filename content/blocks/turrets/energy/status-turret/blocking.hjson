@@ -19,8 +19,9 @@ statusDuration: 45
 
 hasPower: true
 
-
-powerUse: 14
+consumes: {
+power: 14
+}
 
 category: "turret" 
 
