@@ -16,19 +16,20 @@ liquidCapacity: 16
 itemCapacity: 12
 
 consumes:{
-power: 14
+power: 13
 liquid:
-water/0.4
+water/0.5
 items:{items:[
 spore-pod/3
-coal/1
+coal/2
+titanium/3
 ]}}
 
 requirements:[
 titanium/110
 silicon/30
 lead/60
-graphite/25
+plastanium/25
 ]
 
 category: "crafting"
