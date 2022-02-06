@@ -47,7 +47,7 @@ targetFlags: [battery, generator, reactor]
 weapons: [
 
 {
-  name: "tox"
+  name: "toxin-weapon"
   
   reload: 25
   rotate: "true"
