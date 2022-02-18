@@ -144,7 +144,9 @@ lifetime: 80
 colorTo: "#09fe99" 
 colorFrom: "#07ffc9" 
 
-}}
+}]}
+}
+}
 {
  name: laser-shotgun-electicity
     reload: 80
