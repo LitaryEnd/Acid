@@ -39,8 +39,8 @@ mirror: "true"
 
 rotateSpeed: 4
 
-inaccuracy:  12
-reload: 11
+inaccuracy:  18
+reload: 16
 shots: 1
 shootCone: 40
 angleCone: 40
@@ -55,32 +55,27 @@ rotateShooting: "true"
 bullet:{
 
 type:  empBulletType 
-recoil: 3
 speed: 6
 lightRadius: 7
 
 damage: 210
-splashDamage: 80
+splashDamage: 30
 splashDamageRadius: 60
-
-
-timeDuration: 60
 
 lightOpacity: 0.7
 status: "electrified"
 statusDuration: 80
-shootEffect:hitEmpSpark
-smokeEffect: shootBigSmoke2
+shootEffect: "none"
+smokeEffect: "shootBigSmoke2"
 lifetime: 50
-sprite: "circle-bullet" 
 frontColor: "#ffffff" 
 backColor:  "#57fec7" 
 trailLength: 10
 
-scaleVelocity: true
+scaleVelocity: "true"
 healPercent: 5
 
-despawnEffect: hitEmpSpark
+despawnEffect: "hitEmpSpark"
 
 //trailWidth: 3 /// DONT RUN THAT COMMAND IN THIS TURRET
 
@@ -90,14 +85,14 @@ height: 18
 //trailInterval: 11
 trailColor: "#79ffe9" 
 //trailChance: 0.3
-//trailRotation: true
+//trailRotation: "true"
 
 hitShake: 4
 hitEffect: {
-type: MultiEffect
+type: "MultiEffect"
 effects: [
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 30
 sizeFrom: 30
 lifetime: 80
@@ -105,7 +100,7 @@ colorTo: "#09fe99"
 colorFrom: "#07ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 25
 sizeFrom: 30
 lifetime: 30
@@ -113,7 +108,7 @@ colorTo: "#78c8ec"
 colorFrom: "#37ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 35
 sizeFrom: 30
 lifetime: 30
@@ -121,7 +116,7 @@ colorTo: "#78c8ec"
 colorFrom: "#37ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 0
 sizeFrom: 20
 lifetime: 80
@@ -129,7 +124,7 @@ colorTo: "#09fe99"
 colorFrom: "#07ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 20
 sizeFrom: 0
 lifetime: 80
@@ -137,7 +132,7 @@ colorTo: "#09fe99"
 colorFrom: "#07ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 10
 sizeFrom: 0
 lifetime: 80
@@ -148,8 +143,8 @@ colorFrom: "#07ffc9"
 }
 }
 {
- name: laser-shotgun-electicity
-    reload: 80
+ name: "null"
+    reload: 110
 	
 	//top: "false"
 
@@ -157,43 +152,29 @@ colorFrom: "#07ffc9"
 
     x: 18
     y: 5
-
-    heatColor: "78ff0ee" 
-
-    recoil: 1.5
-
-    shake: 1
-
+    heatColor: "#78ff0e"
     shootShake: 3
-    
+  
     shootSound: "shotgun"
     
     shootCone: 45
 
-    spacing: 0
+    spacing: 5
 
-    rotate: "false"
-
+    rotate: "true"
+    rotateSpeed: 1.3
     shots: 2
 
 			bullet: {
               type: "ShrapnelBulletType"
-
               length: 100
-
               width: 13
-
               damage: 100
-
               speed: 0.01
-
               lifetime: 30
-
-              status: "blasted"
-              statusDuration: 300
-
+                     status: "blasted"
+                     statusDuration: 300
               hitColor: "#78c8ec"
-
               shootEffect: "lightningShoot"
               hitEffect: "lightningShoot"
               
