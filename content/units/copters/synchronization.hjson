@@ -1,0 +1,213 @@
+type: flying
+flying: "true"
+name: "Synchronization"
+description: "Shoots electric balls. " 
+
+health: 22000
+armor:  16
+accel: 0.05
+drag: 0.08
+speed: 1.55
+
+lowAltitude: "true"
+rotateShooting: "true" 
+faceTarget: "true" 
+
+visualElevation: 0.30
+rotateSpeed: 1.7
+range: 290
+hitSize: 42
+commandLimit: 4
+
+// targetFlags reactor factory turret
+
+engineSize:0
+//Engine fully off
+
+immunities: [
+ "blasted"
+ "electrified"
+] 
+
+weapons:[
+{
+
+name: "null"
+
+rotate: "true"
+mirror: "true"
+
+rotateSpeed: 4
+
+inaccuracy:  12
+reload: 11
+shots: 1
+shootCone: 40
+angleCone: 40
+angleOffset: -35
+
+shootSound: "missile" 
+x: 22
+y: 5
+
+rotateShooting: "true" 
+
+bullet:{
+
+type:  empBulletType 
+recoil: 3
+speed: 6
+lightRadius: 7
+
+damage: 210
+splashDamage: 80
+splashDamageRadius: 60
+
+
+timeDuration: 60
+
+lightOpacity: 0.7
+status: "electrified"
+statusDuration: 80
+shootEffect:hitEmpSpark
+smokeEffect: shootBigSmoke2
+lifetime: 50
+sprite: "circle-bullet" 
+frontColor: "#ffffff" 
+backColor:  "#57fec7" 
+trailLength: 10
+
+scaleVelocity: true
+healPercent: 5
+
+despawnEffect: hitEmpSpark
+
+//trailWidth: 3 /// DONT RUN THAT COMMAND IN THIS TURRET
+
+width: 10
+height: 18
+
+//trailInterval: 11
+trailColor: "#79ffe9" 
+//trailChance: 0.3
+//trailRotation: true
+
+hitShake: 4
+hitEffect: {
+type: MultiEffect
+effects: [
+{
+type: WaveEffect
+sizeTo: 30
+sizeFrom: 30
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 25
+sizeFrom: 30
+lifetime: 30
+colorTo: "#78c8ec" 
+colorFrom: "#37ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 35
+sizeFrom: 30
+lifetime: 30
+colorTo: "#78c8ec" 
+colorFrom: "#37ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 0
+sizeFrom: 20
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 20
+sizeFrom: 0
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+} 
+{
+type: WaveEffect
+sizeTo: 10
+sizeFrom: 0
+lifetime: 80
+colorTo: "#09fe99" 
+colorFrom: "#07ffc9" 
+
+}}
+{
+ name: laser-shotgun-electicity
+    reload: 80
+	
+	//top: "false"
+
+    mirror: "true"
+
+    x: 18
+    y: 5
+
+    heatColor: "78ff0ee" 
+
+    recoil: 1.5
+
+    shake: 1
+
+    shootShake: 3
+    
+    shootSound: "shotgun"
+    
+    shootCone: 45
+
+    spacing: 0
+
+    rotate: "false"
+
+    shots: 2
+
+			bullet: {
+              type: "ShrapnelBulletType"
+
+              length: 100
+
+              width: 13
+
+              damage: 100
+
+              speed: 0.01
+
+              lifetime: 30
+
+              status: "blasted"
+              statusDuration: 300
+
+              hitColor: "#78c8ec"
+
+              shootEffect: "lightningShoot"
+              hitEffect: "lightningShoot"
+              
+              colors: [
+
+      "#79f2ee" 
+
+      "#47ecff" 
+
+      "#ffffff" 
+
+                      ] 
+              
+	       }
+	    }
+
+] 
+
+research: "symmetry" 
