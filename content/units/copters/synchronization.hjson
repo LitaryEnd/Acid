@@ -3,19 +3,19 @@ flying: "true"
 name: "Synchronization"
 description: "Shoots electric balls. " 
 
-health: 22000
-armor:  16
+health: 21000
+armor:  15
 accel: 0.05
 drag: 0.08
-speed: 1.55
+speed: 1.60
 
 lowAltitude: "true"
 rotateShooting: "true" 
 faceTarget: "true" 
 
 visualElevation: 0.30
-rotateSpeed: 1.7
-range: 290
+rotateSpeed: 1.8
+range: 320
 hitSize: 42
 commandLimit: 4
 
@@ -58,16 +58,20 @@ type:  empBulletType
 speed: 6
 lightRadius: 7
 
-damage: 210
-splashDamage: 30
+damage: 75
+splashDamage: 22
 splashDamageRadius: 60
+
+buildingDamageMultiplier: 0.40
 
 lightOpacity: 0.7
 status: "electrified"
 statusDuration: 80
 shootEffect: "none"
 smokeEffect: "shootBigSmoke2"
-lifetime: 50
+
+lifetime: 38
+
 frontColor: "#ffffff" 
 backColor:  "#57fec7" 
 trailLength: 10
@@ -159,7 +163,7 @@ colorFrom: "#07ffc9"
     
     shootCone: 45
 
-    spacing: 5
+    spacing: 15
 
     rotate: "true"
     rotateSpeed: 1.3
@@ -167,9 +171,9 @@ colorFrom: "#07ffc9"
 
 			bullet: {
               type: "ShrapnelBulletType"
-              length: 100
+              length: 150
               width: 13
-              damage: 100
+              damage: 110
               speed: 0.01
               lifetime: 30
                      status: "blasted"
