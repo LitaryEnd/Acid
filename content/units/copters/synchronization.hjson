@@ -79,9 +79,11 @@ trailLength: 10
 scaleVelocity: "true"
 healPercent: 5
 
+collidesTeam: "true"
+
 despawnEffect: "hitEmpSpark"
 
-//trailWidth: 3 /// DONT RUN THAT COMMAND IN THIS TURRET
+//trailWidth: 3 /// DONT RUN THAT COMMAND. HE HAVE BUGS
 
 width: 10
 height: 18
@@ -156,6 +158,7 @@ colorFrom: "#07ffc9"
 
     x: 18
     y: 5
+    
     heatColor: "#78ff0e"
     shootShake: 3
   
@@ -163,24 +166,28 @@ colorFrom: "#07ffc9"
     
     shootCone: 45
 
-    spacing: 15
+    spacing: 20
 
     rotate: "true"
-    rotateSpeed: 1.3
+    rotateSpeed: 1
     shots: 2
 
 			bullet: {
               type: "ShrapnelBulletType"
-              length: 150
+              length: 260
               width: 13
-              damage: 110
+              damage: 420
               speed: 0.01
               lifetime: 30
+	      
                      status: "blasted"
                      statusDuration: 300
+		     
               hitColor: "#78c8ec"
               shootEffect: "none"
               hitEffect: "lightningShoot"
+	      
+	      buildingDamageMultiplier: 0.21
               
               colors: [
       "#79f2ee" 
