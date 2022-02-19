@@ -3,7 +3,7 @@ name: "Faton"
 description: "Shoots electron balls" 
 
 health: 550
-armor: 3
+armor: 2
 speed: 1
 flying: false
 
@@ -21,7 +21,8 @@ rotateSpeed: 3
  
 canDrown: false
 
-mechStepParticles: false
+mechStepParticles: true 
+// Test
 
 hovering: true
 
@@ -56,44 +57,38 @@ weapons:[
    // rotateSpeed: 2
 
     shootSound: "plasmaShoot" 
-    
-    
 
 			bullet: {
 
 
-type:  empBulletType 
+type:  "empBulletType"
 
-speed:5
+speed: 4
 lightRadius: 7
 
-damage: 50
-splashDamage: 180
+splashDamage: 80
 splashDamageRadius: 110
-
-
-timeDuration: 60
 
 lightOpacity: 0.7
 status: "electrified"
 statusDuration: 80
-shootEffect:hitEmpSpark
-smokeEffect: shootBigSmoke2
+shootEffect: "hitEmpSpark"
+smokeEffect: "shootBigSmoke2"
 lifetime: 50
-sprite: "circle-bullet" 
+
 frontColor: "#ffffff" 
 backColor:  "#57fec7" 
 trailLength: 10
 
-scaleVelocity: true
+scaleVelocity: "true"
 healPercent: 5
 
-despawnEffect: hitEmpSpark
+despawnEffect: "hitEmpSpark"
 
 //trailWidth: 3 /// DONT RUN COMMAND IN THIS BULLET TYPE
 //trailInterval: 11
 //trailChance: 0.3
-//trailRotation: true
+//trailRotation: "true"
 
 
 width: 10
@@ -103,10 +98,10 @@ trailColor: "#79ffe9"
 
 hitShake: 4
 hitEffect: {
-type: MultiEffect
+type: "MultiEffect"
 effects: [
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 60
 sizeFrom: 60
 lifetime: 80
@@ -114,7 +109,7 @@ colorTo: "#09fe99"
 colorFrom: "#07ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 50
 sizeFrom: 60
 lifetime: 30
@@ -122,7 +117,7 @@ colorTo: "#78c8ec"
 colorFrom: "#37ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 70
 sizeFrom: 60
 lifetime: 30
@@ -130,7 +125,7 @@ colorTo: "#78c8ec"
 colorFrom: "#37ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 0
 sizeFrom: 20
 lifetime: 80
@@ -138,7 +133,7 @@ colorTo: "#09fe99"
 colorFrom: "#07ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 20
 sizeFrom: 0
 lifetime: 80
@@ -146,7 +141,7 @@ colorTo: "#09fe99"
 colorFrom: "#07ffc9" 
 } 
 {
-type: WaveEffect
+type: "WaveEffect"
 sizeTo: 15
 sizeFrom: 0
 lifetime: 80
@@ -155,9 +150,8 @@ colorFrom: "#07ffc9"
 } 
 ] 
 } 
-
- }
 }
-
+}
 ] 
+
 research: ion
