@@ -3,8 +3,8 @@ flying: "true"
 name: "Synchronization"
 description: "Shoots electric balls. " 
 
-health: 21000
-armor:  15
+health: 20000
+armor:  14
 accel: 0.05
 drag: 0.08
 speed: 1.60
@@ -13,7 +13,7 @@ lowAltitude: "true"
 rotateShooting: "true" 
 faceTarget: "true" 
 
-visualElevation: 0.30
+visualElevation: 0.32
 rotateSpeed: 1.8
 range: 320
 hitSize: 42
@@ -40,7 +40,7 @@ mirror: "true"
 rotateSpeed: 4
 
 inaccuracy:  18
-reload: 16
+reload: 18
 shots: 1
 shootCone: 40
 angleCone: 40
@@ -58,7 +58,7 @@ type:  empBulletType
 speed: 6
 lightRadius: 7
 
-damage: 75
+damage: 80
 splashDamage: 22
 splashDamageRadius: 60
 
@@ -179,22 +179,17 @@ colorFrom: "#07ffc9"
                      status: "blasted"
                      statusDuration: 300
               hitColor: "#78c8ec"
-              shootEffect: "lightningShoot"
+              shootEffect: "none"
               hitEffect: "lightningShoot"
               
               colors: [
-
       "#79f2ee" 
-
       "#47ecff" 
-
       "#ffffff" 
-
                       ] 
               
 	       }
 	    }
-
 ] 
 
 research: "symmetry" 
