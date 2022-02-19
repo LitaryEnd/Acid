@@ -30,10 +30,11 @@ requirements: [
 ]
 
 upgrades: [
-  [
-    infection, pathology
-  ]
-[ magpie, dove]
+
+[infection, pathology]
+[magpie, dove]
+[symmetry, synchronization]
+
 ]
 
 category: "units"
